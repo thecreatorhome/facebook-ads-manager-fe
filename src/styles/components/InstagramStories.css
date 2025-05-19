@@ -1,0 +1,63 @@
+.InstagramContainer {
+    height: 406px;
+    width: 228px;
+    background: rgba(0, 0, 0, 0.86);
+    border-radius: 3px;
+}
+
+.LearnMore {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    color: rgb(0, 0, 0);
+    font-family: "Instagram Sans";
+    padding-right: 12px;
+    padding-left: 12px;
+    line-height: 1.1;
+    padding-top: 6px;
+    font-size: 20px;
+    position: relative;
+    top: 81.5%;
+    left: 57%;
+    transform: translate(-87px, -21px);
+    opacity: 1;
+    scale: 1;
+    border-radius: 12px;
+    background: white;
+    max-width: fit-content;
+}
+
+.LinkClip {
+    margin-right: 6px;
+    color: rgb(0, 149, 246);
+    background-color: var(--fds-white);
+}
+
+.InstagramImageContainer,
+.InstagramImage {
+    width: 228px;
+    height: 228px;
+}
+
+.InstagramDescription {
+    margin-bottom: 63px;
+    display: flex;
+    padding-bottom: 5px !important;
+    padding-top: 20px !important;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    font-weight: bold;
+    font-family: Tahoma, Helvetica, Arial, sans-serif;
+    padding: 2px 24px 5px 24px;
+    white-space: normal;
+}
+
+.InstagramDescriptionContainer {
+    height: 500px;
+}
+
+.StoryBreadCrumb {
+    height: 25px;
+}
