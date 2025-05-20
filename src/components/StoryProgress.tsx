@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Progress } from 'antd';
 import 'antd/dist/reset.css';
+import "../styles/components/StoryProgress.css";
 
 // <StoryProgress />
 const StoryProgress = ({ duration = 10000 }) => {
@@ -29,9 +30,9 @@ const StoryProgress = ({ duration = 10000 }) => {
 
     return () => clearInterval(interval);
   }, [duration, cycle]); // re-run when `cycle` updates
-
+  
   return (
-    <div style={{ width: '100%', height: 4 }} key={cycle}>
+    <div style={{ width: '100%' }} key={cycle}> 
       <Progress
         percent={percent}
         showInfo={false}

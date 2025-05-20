@@ -1,0 +1,12 @@
+.ant-progress-line {
+    font-size: 0.1px;
+}
+
+.ant-progress-outer {
+    width: 98% !important;
+    padding-left: 1%;
+}
+
+.ant-progress-inner {
+    height: 1.5px !important;
+}

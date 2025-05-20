@@ -1,0 +1,198 @@
+.HeaderFacebookReel {
+    padding-top: 8px;
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.imageFBBar {
+    height: 40px;
+    width: 40px;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin-left: 8px;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    background: #abafb3;
+}
+
+.adsFbReelContainer {
+    background-image: linear-gradient(to bottom, #8a8d91 75%, #46484a);
+    height: 406px;
+    width: 228px;
+    border-radius: 3px;
+}
+
+.sideBarFBReel {
+    align-items: flex-end;
+    display: flex;
+    margin-right: 8px;
+    flex-direction: column-reverse;
+    height: 200px;
+    justify-content: space-around;
+    top: 20%;
+    position: relative;
+}
+
+.baseLoaderFacebookReel {
+    top: 4%;
+    position: relative;
+}
+
+.baseImageLoaderFacebookReel {
+    margin-left: 4px;
+    display: flex;
+}
+
+.imageBaseLineFBReel {
+    height: 7px;
+    margin-right: 58px;
+    margin-left: 6px;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    background: #abafb3;
+    width: 50px;
+    margin-bottom: 5px;
+}
+
+.baseLineFBReel {
+    margin-top: 14px;
+    height: 7px;
+    margin-right: 58px;
+    margin-left: 16px;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    background: #abafb3;
+}
+
+.imageBaseLineDisplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bottomDotsFBReel {
+    bottom: -80px;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    left: 40%;
+    position: relative;
+}
+
+.dots {
+    height: 4px;
+    width: 4px;
+    border-top-left-radius: 2px;
+    margin-right: 3px;
+    background-color: rgba(255, 255, 255, .2);
+    border-top-right-radius: 2px;
+    margin-left: 3px;
+    display: block;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.dots.active {
+    background-color: var(--fds-white)
+}
+
+.dataFBReel {
+    height: 48px;
+    background-color: rgba(50, 52, 54, .8);
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: flex;
+    align-items: center;
+    border-bottom-right-radius: 8px;
+    justify-content: space-between;
+    flex-direction: row;
+    border-top-left-radius: 8px;
+    position: absolute;
+    margin-top: 25px;
+    width: 217px;
+    margin-left: 5px;
+}
+
+.imageFBReelContainer {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 8px;
+}
+
+.imageFBReel {
+    height: 48px;
+    min-width: 48px;
+    width: 48px;
+    object-fit: cover;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 0;
+}
+
+.textFBReelContainer {
+    width: 100%;
+    min-width: 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+}
+
+.textFBReel {
+    display: flex;
+    align-items: center;
+}
+
+.titleTextFBReel {
+    text-overflow: ellipsis;
+    font-size: .65rem !important;
+    color: white;
+    word-wrap: normal;
+    margin: 2px;
+}
+
+.crossController {
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v4/yu/r/JcbS-uVshmH.png);
+    background-position: 0px 0px;
+    background-size: 17px 45px;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-align: start;
+}
+
+.crossControllerContainer {
+    height: 16px;
+    margin-bottom: 6px;
+    width: 16px;
+    margin-right: 10px;
+}
+
+.optionControllerContainer {
+    height: 16px;
+    width: 16px;
+}
+
+.optionController {
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v4/yu/r/JcbS-uVshmH.png);
+    background-position: 0px -17px;
+    background-size: 17px 45px;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}

@@ -1,0 +1,83 @@
+.FacebookContainer {
+    height: 406px;
+    width: 228px;
+    background: linear-gradient(to top, #D98B00, #D99700);
+    border-radius: 3px;
+}
+
+.FacebookLearnMore {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    color: rgb(0, 0, 0);
+    font-family: "Instagram Sans";
+    padding-right: 12px;
+    padding-left: 12px;
+    line-height: 1.2;
+    padding-top: 6px;
+    font-size: 20px;
+    position: relative;
+    top: 0%;
+    left: 57%;
+    transform: translate(-87px, -21px);
+    opacity: 1;
+    scale: 1;
+    border-radius: 8px;
+    background: white;
+    max-width: fit-content;
+    height: 36px;
+}
+
+.FacebookLinkClip {
+    background-image: url("../../assets/all-icon.png");
+    background-repeat: no-repeat;
+    background-size: 401px 1711px;
+    background-position: -350px -1370px;
+    display: inline-block;
+    height: 24px;
+    vertical-align: middle;
+    width: 24px;
+    margin-right: 6px;
+}
+
+.FacebookImageContainer,
+.FacebookImage {
+    width: 228px;
+    height: 228px;
+}
+
+.FacebookDescription {
+    margin-bottom: 63px;
+    display: flex;
+    padding-bottom: 5px !important;
+    padding-top: 20px !important;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    font-weight: bold;
+    font-family: Tahoma, Helvetica, Arial, sans-serif;
+    padding: 2px 24px 5px 24px;
+    white-space: normal;
+}
+
+.FacebookDescriptionContainer {
+    height: 500px;
+}
+
+.StoryBreadCrumb {
+    height: 25px;
+}
+
+.upArrowFacebook {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAAIVBMVEVMaXH///////////////////////////////////////8c1D1MAAAACnRSTlMAiOZviTw7c4Zsk0IBVQAAAGRJREFUOMtjYBgFQw4YKWMXZ1y1SgCrhNSqVQtxaMCuxQsksRCHBmxagBoWYrMFpEGAEYsWiGJMLRwQtSAtDSgSUVClQC3LUCSqoIYDtSxH07EQ5jhUHZxKBhAGs9KE0dQ0pAAAmBIrzqGX7GsAAAAASUVORK5CYII=);
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: -2px -5px;
+    bottom: 24px;
+    height: 10px;
+    left: 34%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 20px;
+}
