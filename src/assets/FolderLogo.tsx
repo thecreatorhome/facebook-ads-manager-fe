@@ -1,0 +1,3 @@
+export const FolderLogo = () => {
+    return <svg viewBox="0 0 48 48" width="1em" height="1em" fill="currentColor" className="x4s1yf2 xlup9mm x1kky2od"><g><path d="m19.95 8.76-.18-.53a4 4 0 0 0-3.79-2.74H6.5c-1.66 0-3 1.34-3 3v30c0 2.21 1.79 4 4 4h33c2.21 0 4-1.79 4-4V15.5c0-2.21-1.79-4-4-4H23.74c-1.72 0-3.25-1.1-3.79-2.74z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3px" fill="none"></path></g></svg>
+}

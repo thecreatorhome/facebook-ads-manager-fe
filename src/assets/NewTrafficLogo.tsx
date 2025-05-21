@@ -1,0 +1,3 @@
+export const NewTrafficLogo = () => {
+    return <svg viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor" className="x4s1yf2 xlup9mm x1kky2od"><g data-name="Layer 2"><g><g data-name="16"><rect className="xbh8q5q xi5qq39" x="9.5" y="0.5" width="6" height="6" rx="1"></rect><rect className="xbh8q5q xi5qq39" x="0.5" y="0.5" width="6" height="6" rx="1"></rect><rect className="xbh8q5q xi5qq39" x="9.5" y="9.5" width="6" height="6" rx="1" transform="rotate(90 12.5 12.5)"></rect><rect className="xbh8q5q xi5qq39" x="0.5" y="9.5" width="6" height="6" rx="1" transform="rotate(90 3.5 12.5)"></rect></g></g></g></svg>
+}
