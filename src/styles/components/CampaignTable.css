@@ -1,0 +1,33 @@
+.ant-table-column-sorter-full {
+    display: none;
+}
+
+/* Target the header row and make it white */
+.ant-table-thead > tr > th {
+    background-color: #ffffff !important;
+}
+.ant-table-tbody > tr:nth-child(even) {
+    background-color: #ffffff; /* White */
+}
+
+.ant-table-tbody > tr:nth-child(odd) {
+    background-color: #f7f7f7 !important; /* Light gray */
+}
+
+/* Add borders to table cells */
+.ant-table-tbody > tr > td,
+.ant-table-thead > tr > th {
+  border-bottom: 1px solid #d9d9d9; /* Standard light gray border */
+  border-left: 1px solid #d9d9d9; /* Standard light gray border */
+}
+
+/* Optional: ensure the table doesn't collapse borders */
+.ant-table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.ant-table-thead > tr > th {
+    border-top: 1px solid #d9d9d9;
+    background-color: white;
+  }
