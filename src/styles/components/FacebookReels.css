@@ -1,0 +1,66 @@
+.FacebookReelsContainer {
+    height: 406px;
+    width: 228px;
+    border-radius: 3px;
+    border-spacing: 0;
+    background-image: linear-gradient(to bottom,
+            #46484a 0%,
+            #e5ebf3 25%,
+            #e5ebf3 75%,
+            #46484a 100%);
+}
+
+.headerFacebookReels {
+    padding-top: 25px;
+}
+
+.LikeIconFacebookReels {
+    background-image: url("../../assets/all-icon.png");
+    background-position: -275px -1370px;
+    background-size: 401px 1711px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.optionContainerFacebookReels {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: .65rem !important;
+    color: #fff;
+    align-items: center;
+    height: 182px;
+    margin-bottom: 2px;
+}
+
+.chatIconFacebookReels {
+    background-image: url("../../assets/all-icon.png");
+    background-position: -175px -1345px;
+    background-size: 401px 1711px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.forwardIconFacebookReels {
+    background-image: url("../../assets/all-icon.png");
+    background-position: -300px -1395px;
+    background-size: 401px 1711px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.numberIconFacebookReels {
+    margin-top: 2px;
+    margin-top: 6px;
+    margin-bottom: 2px;
+}
+
+.iconOptionContainerFacebookReels {
+    top: -10px;
+}
