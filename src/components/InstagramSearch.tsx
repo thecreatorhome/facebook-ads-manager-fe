@@ -1,4 +1,3 @@
-import Title from "antd/es/skeleton/Title";
 import "../styles/components/InstagramSearch.css";
 import { Carousel } from 'antd';
 

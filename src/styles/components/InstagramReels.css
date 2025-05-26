@@ -1,0 +1,102 @@
+.instagramReelsContainer {
+    height: 406px;
+    width: 228px;
+    border-radius: 3px;
+    border-spacing: 0;
+    background-image: linear-gradient(to bottom,
+            #46484a 0%,
+            #e5ebf3 25%,
+            #e5ebf3 75%,
+            #46484a 100%);
+}
+
+.headerInstagramReels {
+    display: flex;
+    padding-top: 15px;
+    color: white;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerTitleContainerInstagramReels {
+    margin-top: 1px;
+}
+
+.headerTitleInstagramReels {
+    font-weight: 700;
+    font-size: 1.2rem !important;
+    font-family: Roboto, Arial, sans-serif !important;
+    line-height: 1.33334 !important;
+    margin-left: 18px;
+}
+
+.cameraInstagramReels {
+    background-image: url("../../assets/all-icon.png");
+    background-position: -200px -1420px;
+    background-size: 401px 1711px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.followInstagramReels {
+    border-top-width: 1.5px;
+    padding-bottom: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 1.5px;
+    padding-top: 4px;
+    border-top-style: solid;
+    border-right-style: solid;
+    padding-right: 6px;
+    border-top-right-radius: 8px;
+    color: var(--fds-white);
+    border-bottom-left-radius: 8px;
+    border-right-width: 1.5px;
+    border-bottom-right-radius: 8px;
+    border-left-style: solid;
+    border-left-width: 1.5px;
+    border-top-left-radius: 8px;
+    font-size: .625rem;
+    margin-left: 12px;
+    padding-left: 6px;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.28;
+}
+
+.sponsorInstagramReels {
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border-top-left-radius: 999px;
+    border-bottom-left-radius: 999px;
+    justify-content: center;
+    color: var(--fds-white);
+    align-items: flex-start;
+    display: inline-flex;
+    border-bottom-right-radius: 999px;
+    padding-right: 10px;
+    font-size: .625rem;
+    border-top-right-radius: 999px;
+    padding-left: 5px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 80px;
+    margin-left: 12px;
+}
+
+.speakerInstagramReels {
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v4/yh/r/adljrDbOXvl.png);
+    background-position: -306px -1677px;
+    background-size: 401px 1711px;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.speakerTitleInstagramReels {
+    margin-left: 5px;
+}
