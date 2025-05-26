@@ -99,7 +99,7 @@
 }
 
 .dots.active {
-    background-color: var(--fds-white)
+    background-color: var(--fds-white);
 }
 
 .dataFBReel {

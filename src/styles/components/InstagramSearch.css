@@ -1,0 +1,210 @@
+.instagramSearchContainer {
+    height: 406px;
+    width: 228px;
+    border-radius: 3px;
+    border-spacing: 0;
+    background-image: linear-gradient(to bottom, #e5ebf3 75%, #46484a);
+}
+
+.headerInstagramSearch {
+    display: flex;
+    padding-top: 15px;
+    color: white;
+    flex-direction: row;
+}
+
+.backArrowInstagramSearch {
+    background-image: url("../../assets/all-icon.png");
+    background-position: -225px -1420px;
+    background-size: 401px 1711px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.headerTitleContainerInstagramSearch {
+    margin-top: 1px;
+}
+
+.headerTitleInstagramSearch {
+    font-weight: 700;
+    font-size: .75rem !important;
+    font-family: Roboto, Arial, sans-serif !important;
+    line-height: 1.33334 !important;
+    margin-left: 48px;
+}
+
+.imageInstagramSearch {
+    height: 232px;
+    width: 228px;
+    margin-top: 10px;
+}
+
+.ant-carousel .slick-dots li {
+    width: 4px !important;
+}
+
+.ant-carousel .slick-dots li.slick {
+    width: 4px !important;
+}
+
+.footerInstagramSearch {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.iconOptionContainerInstagramSearch {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 126px;
+    margin-right: 10px;
+}
+
+.loveIconInstagramSearch{
+    background-image: url("../../assets/all-icon.png");
+    background-position: 0px -1445px;
+    background-size: 401px 1711px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.chatIconInstagramSearch{
+    background-image: url("../../assets/all-icon.png");
+    background-position: -275px -1420px;
+    background-size: 401px 1711px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.forwardIconInstagramSearch{
+    background-image: url("../../assets/all-icon.png");
+    background-position: -325px -1420px;
+    background-size: 401px 1711px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.dotsIconInstagramSearch {
+    background-image: url("../../assets/all-icon.png");
+    background-position: -75px -1445px;
+    background-size: 401px 1711px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.headlineContainerInstagramSearch {
+    display: flex;
+    height: 58px;
+    text-align: left;
+    align-items: center;
+    flex-direction: row;
+    flex-grow: 1;
+    margin: 0px 12px;
+}
+
+.headlineImageContainerInstagramSearch {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    flex-shrink: 0;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.headlineImageInstagramSearch {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+
+.headlineTitleInstagramSearch {
+    font-style: normal;
+    font-size: 0.675rem;
+    word-break: break-word;
+    font-weight: 600;
+    color: var(--fds-white);
+    line-height: 1.2857;
+
+}
+
+.headlineTitleContainerInstagramSearch {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    margin-left: 8px;
+    width: 100%;
+}
+
+.sponsoredTitleInstagramSearch {
+    font-size: 0.675rem;
+    font-style: normal;
+    line-height: 1.3333;
+    color: var(--fds-white);
+    font-weight: normal;
+}
+
+.columnHeadlineContainerInstagramSearch {
+    display: flex;
+    flex-direction: column;
+    width: 178px;
+}
+
+.learnMoreContainer {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    min-height: 0;
+    margin-left: 12px;
+    height: 25px;
+}
+
+.learnMoreFlex {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 12px;
+    align-items: center;
+}
+
+.learnMoreTitle {
+    padding-left: 12px;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    font-size: 10px;
+}
+
+.sideArrowLearnMore {
+    width: 16px;
+    height: 16px;
+    mask-image: url("../../assets/infoAllIcon.png");
+    mask-size: 51px 220px;
+    mask-position: 0px -152px;
+    background-color: black;
+}
+
+.learnMoreDescriptionInstagramSearch {
+    color: var(--fds-white);
+    pointer-events: none;
+    font-size: .4875rem;
+    padding: 6px 12px;
+}
