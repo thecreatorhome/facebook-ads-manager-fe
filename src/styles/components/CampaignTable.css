@@ -1,24 +1,29 @@
 .ant-table-column-sorter-full {
-    display: none;
+  display: none;
 }
 
 /* Target the header row and make it white */
-.ant-table-thead > tr > th {
-    background-color: #ffffff !important;
-}
-.ant-table-tbody > tr:nth-child(even) {
-    background-color: #ffffff; /* White */
+.ant-table-thead>tr>th {
+  background-color: #ffffff !important;
 }
 
-.ant-table-tbody > tr:nth-child(odd) {
-    background-color: #f7f7f7 !important; /* Light gray */
+.ant-table-tbody>tr:nth-child(even) {
+  background-color: #ffffff;
+  /* White */
+}
+
+.ant-table-tbody>tr:nth-child(odd) {
+  background-color: #f7f7f7 !important;
+  /* Light gray */
 }
 
 /* Add borders to table cells */
-.ant-table-tbody > tr > td,
-.ant-table-thead > tr > th {
-  border-bottom: 1px solid #d9d9d9; /* Standard light gray border */
-  border-left: 1px solid #d9d9d9; /* Standard light gray border */
+.ant-table-tbody>tr>td,
+.ant-table-thead>tr>th {
+  border-bottom: 1px solid #d9d9d9;
+  /* Standard light gray border */
+  border-left: 1px solid #d9d9d9;
+  /* Standard light gray border */
 }
 
 /* Optional: ensure the table doesn't collapse borders */
@@ -27,7 +32,143 @@
   border-spacing: 0;
 }
 
-.ant-table-thead > tr > th {
-    border-top: 1px solid #d9d9d9;
-    background-color: white;
-  }
+.ant-table-thead>tr>th {
+  border-top: 1px solid #d9d9d9;
+  background-color: white;
+}
+
+.ant-table-cell {
+  padding: 5px !important;
+}
+
+.campaignName {
+  display: flex;
+  flex-direction: column;
+}
+
+.campaignNameOptions {
+  display: flex;
+}
+
+.campaignNameOption {
+  margin: 3px 7px 0px 0px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 450;
+  display: flex;
+  align-items: flex-start;
+}
+
+.campaignNameOption .pencilEdit {
+  background-color: black !important;
+}
+
+.campaignNameTitle {
+  pointer-events: auto;
+  cursor: pointer;
+  line-height: 1.28;
+  margin-right: 4px;
+  max-width: 100%;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #3578E5;
+  display: flex;
+}
+
+.pencilEdit {
+  width: 19px;
+  height: 19px;
+  mask-image: url("../../assets/all-in-one-logo.png");
+  mask-size: 526px 402px;
+  mask-position: -223px -355px;
+  background-color: #807a7a;
+  margin-left: 5px;
+}
+
+.viewChart {
+  width: 13px;
+  height: 19px;
+  mask-image: url("../../assets/all-in-one-logo.png");
+  mask-size: 302px 448px;
+  mask-position: -223px -355px;
+  background-color: black;
+  margin-left: 5px;
+}
+
+.compareIcon {
+  width: 11px;
+  height: 14px;
+  mask-image: url("../../assets/all-in-one-logo.png");
+  mask-size: 380px 396px;
+  mask-position: -3442px -382px;
+  background-color: black;
+  margin-left: 5px;
+}
+
+.duplicateIcon {
+  width: 15px;
+  height: 19px;
+  mask-image: url("../../assets/all-in-one-logo.png");
+  mask-size: 380px 396px;
+  mask-position: -3625px -331px;
+  background-color: black;
+  margin-left: 5px;
+}
+
+.threeDots {
+  width: 15px;
+  height: 7px;
+  mask-image: url("../../assets/all-in-one-logo.png");
+  mask-size: 380px 396px;
+  mask-position: -3746px -244px;
+  background-color: black;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.activeGreenDot {
+  width: 11px;
+  height: 10px;
+  mask-image: url("../../assets/all-in-one-logo.png");
+  mask-size: 380px 396px;
+  mask-position: -3675px -281px;
+  background-color: green;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.deliveryTextContainer {
+  display: flex;
+  align-items: center;
+}
+
+.draftGreenDot {
+  width: 8px;
+  height: 10px;
+  mask-image: url("../../assets/all-in-one-logo.png");
+  mask-size: 380px 396px;
+  mask-position: -3709px -280px;
+  background-color: green;
+  margin-left: 8px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.rowRevereseContainer {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.rightAlignedText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.helpTextHighlight {
+  font-size: .75rem !important;
+  font-weight: 400;
+  color: #1c2b33a6;
+}

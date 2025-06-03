@@ -4,7 +4,8 @@ import { Table } from 'antd';
 import type { ColumnsType } from 'antd/es/table';
 import { ArrowUpOutlined, ArrowDownOutlined } from "@ant-design/icons";
 import "../styles/components/CampaignTable.css";
-
+import { Switch } from 'antd';
+import { EditOutlined } from '@ant-design/icons';
 
 const CampaignTable = () => {
     const [sortInfo, setSortInfo] = useState({ columnKey: "", order: null });
@@ -41,7 +42,7 @@ const CampaignTable = () => {
             ends: '2025-06-01',
         }
     ];
-    
+
     const rowSelection = {
         onChange: (selectedRowKeys: React.Key[], selectedRows: any[]) => {
             console.log('Selected row keys:', selectedRowKeys);
@@ -51,10 +52,16 @@ const CampaignTable = () => {
 
     const handleChange = (pagination: any, filters: any, sorter: any) => {
         setSortInfo(sorter);
-      };
-    
-    
-      const columns: ColumnsType<any> = [
+    };
+
+    const [tableData, setData] = useState(dataSource);
+    const handleSwitchChange = (value: boolean, key: string) => {
+        const newData = tableData.map(item =>
+            item.key === key ? { ...item, offOn: value } : item
+        );
+        setData(newData);
+    };
+    const columns: ColumnsType<any> = [
         {
             title: (
                 <span>
@@ -75,6 +82,9 @@ const CampaignTable = () => {
             width: 90,
             sorter: (a, b) => Number(a.offOn) - Number(b.offOn),
             sortOrder: sortInfo.columnKey === "offOn" ? sortInfo.order : null,
+            render: (checked: boolean, record) => (
+                <Switch checked={checked} onChange={(val) => handleSwitchChange(val, record.key)} />
+            )
         },
         {
             title: (
@@ -93,9 +103,21 @@ const CampaignTable = () => {
             dataIndex: 'campaign',
             key: 'campaign',
             fixed: 'left' as const,
-            width: 200,
+            width: 300,
             sorter: (a, b) => a.campaign.localeCompare(b.campaign),
             sortOrder: sortInfo.columnKey === "campaign" ? sortInfo.order : null,
+            render: (record) => (
+                <div className="campaignName">
+                    <div className="campaignNameTitle">{record} <div className="pencilEdit"></div></div>
+                    <div className="campaignNameOptions">
+                        <div className="campaignNameOption"><div className="viewChart"></div>View charts</div>
+                        <div className="campaignNameOption"><div className="pencilEdit"></div>Edit</div>
+                        <div className="campaignNameOption"><div className="duplicateIcon"></div>Duplicate</div>
+                        <div className="campaignNameOption"><div className="compareIcon"></div></div>
+                        <div className="campaignNameOption"><div className="threeDots"></div></div>
+                    </div>
+                </div>
+            )
         },
         {
             title: (
@@ -116,12 +138,18 @@ const CampaignTable = () => {
             width: 200,
             sorter: (a, b) => a.delivery.localeCompare(b.delivery),
             sortOrder: sortInfo.columnKey === "delivery" ? sortInfo.order : null,
+            render: (record) => (
+                <div className="deliveryTextContainer"><span className={record == "Active" ? "activeGreenDot" : (record == "Off" ? "" : "draftGreenDot")} />{record}</div>
+            )
         },
         {
             title: 'Bid strategy',
             dataIndex: 'bidStrategy',
             key: 'bidStrategy',
             width: 200,
+            render: (record) => (
+                <div className="rowRevereseContainer">{record}</div>
+            )
         },
         {
             title: (
@@ -143,6 +171,14 @@ const CampaignTable = () => {
             sorter: (a, b) =>
                 parseFloat(a.budget.replace(/\$/g, '')) - parseFloat(b.budget.replace(/\$/g, '')),
             sortOrder: sortInfo.columnKey === "budget" ? sortInfo.order : null,
+            render: (record) => (
+                <div className="rowRevereseContainer">
+                    <div className="rightAlignedText">
+                        <div>{record}</div>
+                        <div className="helpTextHighlight">Daily</div>
+                    </div>
+                </div>
+            )
         },
         {
             title: 'Attribution setting',
@@ -169,6 +205,14 @@ const CampaignTable = () => {
             width: 200,
             sorter: (a, b) => Number(a.results) - Number(b.results),
             sortOrder: sortInfo.columnKey === "results" ? sortInfo.order : null,
+            render: (record) => (
+                <div className="rowRevereseContainer">
+                    <div className="rightAlignedText">
+                        <div>{record}</div>
+                        <div className="helpTextHighlight">Links clicks</div>
+                    </div>
+                </div>
+            )
         },
         {
             title: (
@@ -189,6 +233,9 @@ const CampaignTable = () => {
             width: 200,
             sorter: (a, b) => Number(a.reach) - Number(b.reach),
             sortOrder: sortInfo.columnKey === "reach" ? sortInfo.order : null,
+            render: (record) => (
+                <div className="rowRevereseContainer">{record}</div>
+            )
         },
         {
             title: (
@@ -209,6 +256,9 @@ const CampaignTable = () => {
             width: 200,
             sorter: (a, b) => Number(a.impressions) - Number(b.impressions),
             sortOrder: sortInfo.columnKey === "impressions" ? sortInfo.order : null,
+            render: (record) => (
+                <div className="rowRevereseContainer">{record}</div>
+            )
         },
         {
             title: (
@@ -231,6 +281,14 @@ const CampaignTable = () => {
                 parseFloat(a.costPerResult.replace(/\$/g, '')) -
                 parseFloat(b.costPerResult.replace(/\$/g, '')),
             sortOrder: sortInfo.columnKey === "costPerResult" ? sortInfo.order : null,
+            render: (record) => (
+                <div className="rowRevereseContainer">
+                    <div className="rightAlignedText">
+                        <div>{record}</div>
+                        <div className="helpTextHighlight">Per Link Click</div>
+                    </div>
+                </div>
+            )
         },
         {
             title: (
@@ -273,14 +331,17 @@ const CampaignTable = () => {
             width: 200,
             sorter: (a, b) => new Date(a.ends).getTime() - new Date(b.ends).getTime(),
             sortOrder: sortInfo.columnKey === "ends" ? sortInfo.order : null,
+            render: (record) => (
+                <div className="rowRevereseContainer">{record}</div>
+            )
         }
     ];
-    
+
 
     return (
-        <Table dataSource={dataSource} columns={columns} scroll={{ x: 1500 }}
-            rowSelection={rowSelection} 
-            onChange={handleChange}/>
+        <Table dataSource={tableData} columns={columns} scroll={{ x: 1500 }}
+            rowSelection={rowSelection}
+            onChange={handleChange} />
     );
 };
 
