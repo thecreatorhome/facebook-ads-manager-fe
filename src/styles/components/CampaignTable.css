@@ -77,13 +77,21 @@
 }
 
 .pencilEdit {
-  width: 19px;
-  height: 19px;
+  width: 22px;
+  height: 18px;
   mask-image: url("../../assets/all-in-one-logo.png");
-  mask-size: 526px 402px;
-  mask-position: -223px -355px;
+  mask-size: 571px 398px;
+  mask-position: -262px -351px;
   background-color: #807a7a;
   margin-left: 5px;
+}
+
+.inactiveOption {
+  color: #807a7a !important;
+}
+
+.inactiveIconOption {
+  background-color: #807a7a !important;
 }
 
 .viewChart {
@@ -114,6 +122,30 @@
   mask-position: -3625px -331px;
   background-color: black;
   margin-left: 5px;
+}
+
+.abTestIcon {
+  width: 15px;
+  height: 19px;
+  mask-image: url("../../assets/all-in-one-logo.png");
+  mask-size: 358px 294px;
+  mask-position: -3826px -161px;
+  background-color: black;
+  margin-left: 5px;
+}
+
+.moreOptionIcon {
+  width: 15px;
+  height: 8px;
+  mask-image: url("../../assets/all-in-one-logo.png");
+  mask-size: 391px 329px;
+  mask-position: 336px -1963px;
+  background-color: black;
+  margin-left: 5px;
+}
+
+.noBorder {
+  border: 0px !important;
 }
 
 .threeDots {
@@ -171,4 +203,96 @@
   font-size: .75rem !important;
   font-weight: 400;
   color: #1c2b33a6;
+}
+
+.availableCampaignRecordOption {
+  padding: 10px 0px;
+  background-color: white;
+  display: flex;
+}
+
+.createNewCampaign {
+  cursor: pointer;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 5px;
+  background-color: green;
+  margin: 0px 3px;
+  padding: 2px 12px;
+  display: flex;
+  height: 36px;
+  border-style: none !important;
+  width: max-content;
+}
+
+.CampaignRecordOptionTitle {
+  font-weight: 300;
+  color: white;
+  margin: 0px 7px;
+}
+
+.createIconFilter {
+  width: 16px;
+  height: 16px;
+  mask-image: url("../../assets/infoAllIcon.png");
+  mask-size: 51px 220px;
+  mask-position: -34px -169px;
+  background-color: white;
+}
+
+.chartOptionIcon {
+  width: 17px;
+  height: 20px;
+  mask-image: url("../../assets/all-in-one-logo.png");
+  mask-size: 405px 456px;
+  mask-position: -2165px -421px;
+  background-color: black;
+  margin-left: 8px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.exportOptionIcon {
+  width: 15px;
+  height: 20px;
+  mask-image: url("../../assets/all-in-one-logo.png");
+  mask-size: 405px 456px;
+  mask-position: -2041px -421px;
+  background-color: black;
+  margin-left: 8px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.reportOptionIcon {
+  width: 17px;
+  height: 20px;
+  mask-image: url("../../assets/all-in-one-logo.png");
+  mask-size: 405px 456px;
+  mask-position: -2165px -402px;
+  background-color: black;
+  margin-left: 8px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.breakdownOptionIcon {
+  width: 17px;
+  height: 19px;
+  mask-image: url("../../assets/all-in-one-logo.png");
+  mask-size: 446px 448px;
+  mask-position: -209px -355px;
+  background-color: black;
+  margin-left: 5px;
+}
+
+.colPerformanceOptionIcon {
+  width: 17px;
+  height: 19px;
+  mask-image: url("../../assets/all-in-one-logo.png");
+  mask-size: 446px 448px;
+  mask-position: -223px -376px;
+  background-color: black;
+  margin-left: 5px;
 }

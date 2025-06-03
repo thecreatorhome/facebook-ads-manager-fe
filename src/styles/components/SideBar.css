@@ -33,8 +33,10 @@
 }
 
 .advertisingSettingsLogo {
-    mask-position: -75px -221px;
-    -webkit-mask-position: -75px -221px;
+    mask-position: -50px -174px;
+    -webkit-mask-position: -50px -174px;
+    mask-size: 283px 315px !important; 
+    height: 19px !important;
 }
 
 .billingPaymentsLogo {

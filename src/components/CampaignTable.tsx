@@ -339,9 +339,30 @@ const CampaignTable = () => {
 
 
     return (
-        <Table dataSource={tableData} columns={columns} scroll={{ x: 1500 }}
-            rowSelection={rowSelection}
-            onChange={handleChange} />
+        <>
+            <div className="availableCampaignRecordOption">
+                <div>
+                <div className="draftBtnContainerGlobal createNewCampaign">
+                    <div className="createIconFilter" />
+                    <div className="CampaignRecordOptionTitle">Create</div>
+                </div>
+                <div className="draftBtnContainerGlobal"><div className="duplicateIcon inactiveIconOption"></div><span className="draftTitleHeaderGlobal inactiveOption">Duplicate</span></div>
+                <div className="draftBtnContainerGlobal"><div className="pencilEdit"></div><span className="draftTitleHeaderGlobal inactiveOption">Edit</span></div>
+                <div className="draftBtnContainerGlobal"><div className="abTestIcon"></div><span className="draftTitleHeaderGlobal">A/B test</span></div>
+                <div className="draftBtnContainerGlobal noBorder"><span className="draftTitleHeaderGlobal">More</span><div className="moreOptionIcon"></div></div>
+                </div>
+                <div>
+                <div className="draftBtnContainerGlobal"><div className="colPerformanceOptionIcon"></div><span className="draftTitleHeaderGlobal">Columns: Performance</span><div className="moreOptionIcon"></div></div>
+                <div className="draftBtnContainerGlobal"><div className="breakdownOptionIcon"></div><span className="draftTitleHeaderGlobal">Breakdown</span><div className="moreOptionIcon"></div></div>
+                <div className="draftBtnContainerGlobal"><div className="reportOptionIcon"></div><span className="draftTitleHeaderGlobal">Reports</span><div className="moreOptionIcon"></div></div>
+                <div className="draftBtnContainerGlobal"><div className="exportOptionIcon"></div><span className="draftTitleHeaderGlobal">Exports</span><div className="moreOptionIcon"></div></div>
+                <div className="draftBtnContainerGlobal"><div className="chartOptionIcon"></div><span className="draftTitleHeaderGlobal">Charts</span></div>
+                </div>
+            </div>
+            <Table dataSource={tableData} columns={columns} scroll={{ x: 1500 }}
+                rowSelection={rowSelection}
+                onChange={handleChange} />
+        </>
     );
 };
 

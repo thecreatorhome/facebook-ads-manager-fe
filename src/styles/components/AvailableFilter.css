@@ -82,7 +82,7 @@
 .seeMoreIconFilter {
     width: 16px;
     height: 16px;
-    mask-image: url(https://static.xx.fbcdn.net/rsrc.php/v4/yY/r/vzJObRgMrT4.png);
+    mask-image:  url("../../assets/infoAllIcon.png");
     mask-size: 51px 220px;
     mask-position: -34px -169px;
     background-color: black;
