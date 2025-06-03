@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Layout, Button } from "antd";
-import { MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons";
+import { Layout } from "antd";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SideBar from "./components/SideBar";
 import "./App.css";
 import Campaigns from "./screens/Campaigns";
+import HeaderDisplay from "./components/HeaderDisplay";
 
 const { Content, Header } = Layout;
 
@@ -30,20 +30,15 @@ const App: React.FC = () => {
     <Router>
       <Layout style={{ minHeight: "100vh" }}>
         {/* Sidebar */}
-        <SideBar collapsed={collapsed} toggleSidebar={toggleSidebar}/>
+        <SideBar collapsed={collapsed} toggleSidebar={toggleSidebar} />
 
         {/* Main Content */}
         <Layout className="LayoutBoard" style={{ marginLeft: collapsed ? 0 : 0 }}>
           {/* Header with Toggle Button */}
           <Header className="Header" >
-            <div className="HeaderTitle">
-              <Button className="ToggleBtn" type="text" icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />} onClick={toggleSidebar} />
-              {/* <HeaderPath headerPath={routePath} /> */}
-            </div>
-            <div>
-            </div>
+            <HeaderDisplay />
           </Header>
-          
+
           {/* Page Content */}
           <Content style={{ padding: 20, background: "#fff", overflow: "hidden" }}>
             <Routes>
