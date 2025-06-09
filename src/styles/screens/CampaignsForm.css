@@ -1,0 +1,19 @@
+.campaignFormScreenContainer {
+    display: flex;
+    height: 100vh;
+}
+
+.campaignLevelBarContainer {
+    width: 350px;
+    margin: -20px 0px 0px -20px;
+    background-color: white;
+}
+
+.campaignFormBarContainer {
+    margin: -20px 0px 0px 0px;
+    width: 100%;
+    display: flex;
+    height: max-content;
+    margin-right: -30px;
+    background: white;
+}

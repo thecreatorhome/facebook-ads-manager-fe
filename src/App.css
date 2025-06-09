@@ -9,7 +9,8 @@
 }
 
 .ant-layout-content {
-  background: rgb(247 247 246) !important;
+  background: linear-gradient(to top, hsl(214, 78%, 79%), hsla(350, 86%, 75%, 0.2)) !important;
+  padding: 10px 20px;
 }
 
 .ant-table-cell-fix-left {

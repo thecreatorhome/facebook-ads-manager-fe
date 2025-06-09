@@ -1,9 +1,33 @@
 .xlup9mm {
     height: 16px;
 }
+
 .x1kky2od {
     width: 16px;
 }
+
 .ant-tree-switcher {
     display: none !important;
+}
+
+.ant-tree-treenode {
+    margin-top: 10px !important;
+}
+
+.ant-tree-title {
+    line-height: 5px !important;
+}
+
+.ant-tree-iconEle {
+    text-align: left !important;
+    vertical-align: sub !important;
+    width: 10% !important;
+}
+
+.campaignLevelTitle {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
 }

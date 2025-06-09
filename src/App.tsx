@@ -5,9 +5,9 @@ import SideBar from "./components/SideBar";
 import "./App.css";
 import Campaigns from "./screens/Campaigns";
 import CampaignsForm from "./screens/CampaignsForm";
-import HeaderDisplay from "./components/HeaderDisplay";
 
-const { Content, Header } = Layout;
+
+const { Content } = Layout;
 
 const App: React.FC = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -46,10 +46,6 @@ const App: React.FC = () => {
 
         {/* Main Content */}
         <Layout className="LayoutBoard" style={{ marginLeft: collapsed ? 0 : 0 }}>
-          {/* Header with Toggle Button */}
-          <Header className="Header" >
-            <HeaderDisplay />
-          </Header>
 
           {/* Page Content */}
           <Content style={{ padding: 20, background: "#fff", overflow: "hidden" }}>

@@ -11,6 +11,10 @@
     justify-content: space-evenly;
 }
 
+.noBorderActionOptionContainer{
+    border: none !important;
+}
+
 .dotActionMenu {
     height: 4px;
     width: 4px;

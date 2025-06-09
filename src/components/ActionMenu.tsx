@@ -1,5 +1,4 @@
 import "../styles/components/ActionMenu.css";
-import { DownOutlined, SettingOutlined } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 import { Dropdown, Space } from 'antd';
 
@@ -52,12 +51,16 @@ const items: MenuProps['items'] = [
     },
 ];
 
-const ActionMenu = () => {
+interface ActionMenuProps {
+    noBorder?: boolean;
+}
+
+const ActionMenu = ({ noBorder = false}: ActionMenuProps) => {
     return (
         <Dropdown menu={{ items }}>
             <a onClick={(e) => e.preventDefault()}>
                 <Space>
-                    <div className="actionOptionContainer">
+                    <div className={"actionOptionContainer " +(noBorder ? "noBorderActionOptionContainer": "")}>
                         <div className="actionDots">
                             <i className="dotActionMenu"></i>
                             <i className="dotActionMenu"></i>

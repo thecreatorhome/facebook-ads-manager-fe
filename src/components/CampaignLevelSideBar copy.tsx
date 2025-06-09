@@ -1,7 +1,6 @@
 import "../styles/components/CampaignLevelSideBar.css";
 import { Tree } from 'antd';
 import type { TreeDataNode } from 'antd';
-import ActionMenu from "../components/ActionMenu";
 
 const { DirectoryTree } = Tree;
 
@@ -16,19 +15,19 @@ const CampaignLevelSideBar = ({ campaignName, trafficAdSet, trafficAd }: Campaig
 
     const campaignsLevel: TreeDataNode[] = [
         {
-            title: <><div className="campaignLevelTitle">{campaignName} <ActionMenu noBorder={true}/></div></>,
+            title: campaignName,
             key: '0-0',
             children: [
                 {
-                    title:  <><div className="campaignLevelTitle">{trafficAdSet} <ActionMenu noBorder={true}/></div></>,
+                    title: trafficAdSet,
                     key: '0-0-0',
-                    isLeaf: true,
+                    // isLeaf: true,
                     icon: <svg viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor" className="x4s1yf2 xlup9mm x1kky2od"><g data-name="Layer 2"><g><g data-name="16"><rect className="xbh8q5q xi5qq39" x="9.5" y="0.5" width="6" height="6" rx="1"></rect><rect className="xbh8q5q xi5qq39" x="0.5" y="0.5" width="6" height="6" rx="1"></rect><rect className="xbh8q5q xi5qq39" x="9.5" y="9.5" width="6" height="6" rx="1" transform="rotate(90 12.5 12.5)"></rect><rect className="xbh8q5q xi5qq39" x="0.5" y="9.5" width="6" height="6" rx="1" transform="rotate(90 3.5 12.5)"></rect></g></g></g></svg>,
                     children: [
                         {
-                            title: <><div className="campaignLevelTitle">{trafficAd} <ActionMenu noBorder={true}/></div></>,
+                            title: trafficAd,
                             key: '0-0-0-0',
-                            isLeaf: true,
+                            // isLeaf: true,
                             icon: <svg viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor" className="x4s1yf2 xlup9mm x1kky2od"><g data-name="Layer 2"><g data-name="16"><rect x="1.5" y="1.5" width="13" height="13" rx="1.25" stroke="currentColor" fill="none"></rect><circle cx="4.5" cy="4.5" r="1"></circle><path stroke-linecap="round" stroke="currentColor" fill="none" d="M7.5 4.5 12.5 4.5"></path></g></g></svg>
                         }
                     ]
@@ -44,7 +43,7 @@ const CampaignLevelSideBar = ({ campaignName, trafficAdSet, trafficAd }: Campaig
             draggable={false}
             treeData={campaignsLevel}
             expandAction={false}
-            defaultExpandedKeys={['0-0', '0-0-0']}
+
         />
     );
 };
