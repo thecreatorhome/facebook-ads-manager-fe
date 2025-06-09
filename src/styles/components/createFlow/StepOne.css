@@ -1,0 +1,51 @@
+.campaignNameInbox {
+    padding: 15px;
+    background: white;
+    margin: 10px;
+    width: 580px;
+}
+
+.campaignNameInputTitle {
+    display: flex;
+    align-items: center;
+    margin:  5px 10px 10px 0px;
+}
+
+.campaignNameInputOperation {
+    display: flex;
+}
+
+.noMarginTopBottom {
+    margin: 25px 5px 5px 5px;
+}
+.displayColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.campaignNameInput {
+    width: 350px !important;
+    height: 34px !important;
+}
+
+.campaignBoxTitle {
+    font-size: 1rem !important;
+    word-wrap: normal;
+    font-weight: 700;
+}
+
+.greenCheck {
+    width: 16px;
+    height: 16px;
+    mask-image: url(https://static.xx.fbcdn.net/rsrc.php/v4/yA/r/2M_0CXhP5Bo.png);
+    mask-size: 41px 489px;
+    mask-position: -21px -177px;
+    background: green;
+    margin-right: 10px;
+}
+
+.campaignInboxDescription {
+    font-weight: 400;
+    word-wrap: normal;
+    
+}

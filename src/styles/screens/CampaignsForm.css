@@ -32,3 +32,8 @@
 .campaignNameInputBox {
     display: flex;
 }
+
+.stepContainer {
+    overflow: scroll;
+    height: 98vh;
+}

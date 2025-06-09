@@ -19,7 +19,7 @@ const CampaignsForm = () => {
                         <BreadCrumb />
                         <div><ActionMenu /></div>
                     </div>
-                    <div>
+                    <div className="stepContainer">
                         <StepOne />
                     </div>
                 </div>

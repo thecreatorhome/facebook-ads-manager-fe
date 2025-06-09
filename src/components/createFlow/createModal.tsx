@@ -1,7 +1,7 @@
 import "../../styles/components/createFlow/CreateModal.css";
 import { Modal, Button, Radio, RadioChangeEvent, Dropdown, Menu, MenuProps } from 'antd';
 import { useState } from "react";
-import { DownOutlined } from '@ant-design/icons';
+import AuctionDropDown from "../../components/AuctionDropDown";
 
 
 
@@ -11,31 +11,6 @@ interface CreateModalProps {
 }
 
 const CreateModal = ({ isModalOpen, setIsModalOpen }: CreateModalProps) => {
-
-    const buyingTypeDropDown = [
-        {
-            key: '1',
-            label: 'Auction',
-            description: 'Buy in real-time with cost effective bidding.'
-        },
-        {
-            key: '2',
-            label: 'Reservation',
-            description: 'Buy in advancefor more predictable outcomes.'
-        },
-    ];
-    const [selectedLabel, setSelectedLabel] = useState(buyingTypeDropDown[0].label); // Default: first option
-
-    const handleMenuClick: MenuProps['onClick'] = (e) => {
-        const selectedItem = buyingTypeDropDown.find(item => item.key === e.key);
-        if (selectedItem) {
-            setSelectedLabel(selectedItem.label);
-        }
-    };
-
-    const menu = (
-        <Menu onClick={handleMenuClick} items={buyingTypeDropDown} />
-    );
 
     const handleContinue = () => {
         // Your logic for continue
@@ -185,11 +160,7 @@ const CreateModal = ({ isModalOpen, setIsModalOpen }: CreateModalProps) => {
                 </div>
                 <div className="buyingTypeOptionContainer">
                     <h4 className="goodForTitle">Choose a buying type</h4>
-                    <Dropdown overlay={menu} trigger={['click']} className="buyingTypeOptionDropDown">
-                        <Button>
-                            {selectedLabel}<DownOutlined />
-                        </Button>
-                    </Dropdown>
+                    <AuctionDropDown />
                 </div>
                 <div className="campaignObjectContainers">
                     <div className="campaignObjectOptionContainer">
