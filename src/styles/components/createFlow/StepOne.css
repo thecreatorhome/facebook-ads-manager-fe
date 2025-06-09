@@ -10,6 +10,7 @@
     display: flex;
     align-items: center;
     margin:  5px 10px 10px 0px;
+    justify-content: space-between;
 }
 
 .campaignNameInputOperation {
@@ -52,4 +53,13 @@
     white-space: inherit;
     color: #1c2b33;
     font-size: .875rem !important;
+}
+
+.toogleTitle {
+    margin-right: 8px;
+    font-weight: 500;
+}
+
+.inlineFlex {
+    display: flex;
 }
