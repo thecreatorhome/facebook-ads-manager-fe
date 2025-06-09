@@ -3,6 +3,7 @@
     background: white;
     margin: 10px;
     width: 580px;
+    border-radius: 5px;
 }
 
 .campaignNameInputTitle {
@@ -16,7 +17,7 @@
 }
 
 .noMarginTopBottom {
-    margin: 25px 5px 5px 5px;
+    margin: 25px 5px 5px 0px;
 }
 .displayColumn {
     display: flex;
@@ -47,5 +48,8 @@
 .campaignInboxDescription {
     font-weight: 400;
     word-wrap: normal;
-    
+    line-height: 1.42858 !important;
+    white-space: inherit;
+    color: #1c2b33;
+    font-size: .875rem !important;
 }

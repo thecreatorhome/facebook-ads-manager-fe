@@ -48,7 +48,20 @@ const StepOne = () => {
                 </div>
             </div>
 
-
+            <div className="campaignNameInbox">
+                <div className="campaignNameInputTitle">
+                    <div className="greenCheck"></div>
+                    <div className="campaignBoxTitle">Special Ad Categories</div>
+                </div>
+                <div className="displayColumn">
+                    <div className="campaignInboxDescription">Declare if your ads are related to financial products and services, employment, housing, social issues, elections or politics to help prevent ad rejections. Requirements differ by country. About Special Ad Categories</div>
+                </div>
+                <div className="displayColumn">
+                    <div><h4 className="noMarginTopBottom">Categories</h4></div>
+                    <div className="campaignInboxDescription">Select the categories that best describe what this campaign will advertise.</div>
+                    <AuctionDropDown />
+                </div>
+            </div>
         </>
     );
 };

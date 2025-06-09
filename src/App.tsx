@@ -40,7 +40,7 @@ const App: React.FC = () => {
 
   return (
     <Router>
-      <Layout style={{ minHeight: "100vh" }}>
+      <Layout style={{ height: "100vh" }}>
         {/* Sidebar */}
         <SideBar collapsed={collapsed} toggleSidebar={toggleSidebar} />
 
