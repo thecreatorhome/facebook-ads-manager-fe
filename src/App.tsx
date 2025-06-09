@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SideBar from "./components/SideBar";
 import "./App.css";
 import Campaigns from "./screens/Campaigns";
+import CampaignsForm from "./screens/CampaignsForm";
 import HeaderDisplay from "./components/HeaderDisplay";
 
 const { Content, Header } = Layout;
@@ -17,6 +18,17 @@ const App: React.FC = () => {
       "path": "/",
       "screen": <Campaigns />,
       "key": "Campaigns",
+      "headerPath": [
+        {
+          "name": "Campaigns",
+          "path": "/"
+        }
+      ],
+    },
+    {
+      "path": "/form",
+      "screen": <CampaignsForm />,
+      "key": "CampaignsForm",
       "headerPath": [
         {
           "name": "Campaigns",

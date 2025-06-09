@@ -1,0 +1,206 @@
+.createCampaignType {
+    display: flex;
+    flex-direction: column;
+}
+
+.awarenessClass {
+    background-image: url("../../../assets/createCampaignImages.png");
+    background-position: 0px -171px;
+    background-size: 171px 1222px;
+    width: 170px;
+    height: 170px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.trafficClass {
+    background-image: url("../../../assets/createCampaignImages.png");
+    background-position: 0px -855px;
+    background-size: 171px 1222px;
+    width: 170px;
+    height: 170px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.engagementClass {
+    background-image: url("../../../assets/createCampaignImages.png");
+    background-position: 0px -1026px;
+    background-size: 171px 1222px;
+    width: 170px;
+    height: 170px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.leadsClass {
+    background-image: url("../../../assets/createCampaignImages.png");
+    background-position: 0px -513px;
+    background-size: 171px 1222px;
+    width: 170px;
+    height: 170px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.appPromotionClass {
+    background-image: url("../../../assets/createCampaignImages.png");
+    background-position: 0px 0px;
+    background-size: 171px 1222px;
+    width: 170px;
+    height: 170px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.salesClass {
+    background-image: url("../../../assets/createCampaignImages.png");
+    background-position: 0px -684px;
+    background-size: 171px 1222px;
+    width: 170px;
+    height: 170px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.awarenessIcon {
+    width: 20px;
+    height: 20px;
+    mask-image: url("../../../assets/createCampaignModal.png");
+    mask-size: 21px 647px;
+    mask-position: 0px -252px;
+    background: black;
+}
+
+.trafficIcon {
+    width: 20px;
+    height: 20px;
+    mask-image: url("../../../assets/createCampaignModal.png");
+    mask-size: 21px 647px;
+    mask-position: 0px -126px;
+    background: black;
+}
+
+.engagementIcon {
+    width: 20px;
+    height: 20px;
+    mask-image: url("../../../assets/createCampaignModal.png");
+    mask-size: 21px 647px;
+    mask-position: 0px -147px;
+    background: black;
+}
+
+.leadsIcon {
+    width: 20px;
+    height: 20px;
+    mask-image: url("../../../assets/createCampaignModal.png");
+    mask-size: 21px 647px;
+    mask-position: 0px -168px;
+    background: black;
+}
+
+.appPromotionIcon {
+    width: 20px;
+    height: 20px;
+    mask-image: url("../../../assets/createCampaignModal.png");
+    mask-size: 21px 647px;
+    mask-position: 0px -189px;
+    background: black;
+}
+
+.salesIcon {
+    width: 20px;
+    height: 20px;
+    mask-image: url("../../../assets/createCampaignModal.png");
+    mask-size: 21px 647px;
+    mask-position: 0px -357px;
+    background: black;
+}
+
+.salesIconActive {
+    background: white;
+}
+
+.createCampaignOptionBackground {
+    padding: 8px;
+    justify-content: center;
+    border-radius: 8px;
+    align-items: center;
+    background-color: #00000008;
+    margin-right: 15px;
+}
+
+.createCampaignOptionActiveBackground {
+    background-color: #0a78be !important;
+}
+
+.campaignObjectContainers {
+    display: flex;
+}
+
+.campaignObjectOptionContainer {
+    min-width: 245px;
+}
+
+.campaignObjectDetailContainer {
+    margin-top: 100px;
+}
+
+.ant-radio-label {
+    display: flex !important;
+    align-items: center;
+    margin: 7px;
+}
+
+.createBadgeTitle {
+    background-color: #00000008;
+    width: max-content;
+    padding: 5px;
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+
+.goodForTitle {
+    margin: 0px;
+}
+
+.createCampaignImageContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.createCampaignDescription {
+    color: rgba(0, 0, 0, 0.45);
+}
+
+.createCampaignOptionsContainer {
+    display: flex;
+}
+
+.createCampaignOption {
+    padding: 8px;
+    margin-right: 15px;
+}
+
+.actionCreateCampaignOption {
+    color: #0a78be !important;
+    font-weight: 700;
+    background-color: #e1edf7 !important;
+    border-radius: 5px;
+}
+
+.buyingTypeOptionContainer {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.buyingTypeOptionDropDown {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ant-modal {
+    width: 560px !important;
+    top: 35px;
+}

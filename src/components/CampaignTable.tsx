@@ -5,7 +5,7 @@ import type { ColumnsType } from 'antd/es/table';
 import { ArrowUpOutlined, ArrowDownOutlined } from "@ant-design/icons";
 import "../styles/components/CampaignTable.css";
 import { Switch } from 'antd';
-import { EditOutlined } from '@ant-design/icons';
+import CreateModal from "./createFlow/createModal";
 
 const CampaignTable = () => {
     const [sortInfo, setSortInfo] = useState({ columnKey: "", order: null });
@@ -336,15 +336,17 @@ const CampaignTable = () => {
             )
         }
     ];
+    const [createModalOpen, setCreateModalOpen] = useState(false);
 
 
     return (
         <>
             <div className="availableCampaignRecordOption">
                 <div>
-                <div className="draftBtnContainerGlobal createNewCampaign">
+                <div className="draftBtnContainerGlobal createNewCampaign"  onClick={() => setCreateModalOpen(!createModalOpen)}>
                     <div className="createIconFilter" />
                     <div className="CampaignRecordOptionTitle">Create</div>
+                    <CreateModal isModalOpen={createModalOpen} setIsModalOpen={setCreateModalOpen}/>
                 </div>
                 <div className="draftBtnContainerGlobal"><div className="duplicateIcon inactiveIconOption"></div><span className="draftTitleHeaderGlobal inactiveOption">Duplicate</span></div>
                 <div className="draftBtnContainerGlobal"><div className="pencilEdit"></div><span className="draftTitleHeaderGlobal inactiveOption">Edit</span></div>
