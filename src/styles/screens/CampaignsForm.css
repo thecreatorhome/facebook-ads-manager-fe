@@ -15,5 +15,20 @@
     display: flex;
     height: max-content;
     margin-right: -30px;
+    flex-direction: column;
+}
+
+.campaignFormBarContainerHeader {
+    display: flex;
+    width: 100%;
     background: white;
+}
+
+.campaignBox {
+    background-color: white;
+    height: max-content;
+}
+
+.campaignNameInputBox {
+    display: flex;
 }

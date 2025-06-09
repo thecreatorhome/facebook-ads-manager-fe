@@ -2,6 +2,7 @@ import "../styles/screens/CampaignsForm.css";
 import BreadCrumb from "../components/BreadCrumb";
 import CampaignLevelSideBar from "../components/CampaignLevelSideBar";
 import ActionMenu from "../components/ActionMenu";
+import StepOne from "../components/createFlow/stepOne";
 
 const CampaignsForm = () => {
     return (
@@ -14,13 +15,15 @@ const CampaignsForm = () => {
                         trafficAd="New Traffic" />
                 </div>
                 <div className="campaignFormBarContainer">
-                    <BreadCrumb />
-                    <div><ActionMenu /></div>
+                    <div className="campaignFormBarContainerHeader">
+                        <BreadCrumb />
+                        <div><ActionMenu /></div>
+                    </div>
+                    <div>
+                        <StepOne />
+                    </div>
                 </div>
             </div>
-
-
-
         </>
     );
 };
