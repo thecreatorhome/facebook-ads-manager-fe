@@ -1,13 +1,11 @@
 import "../../styles/components/createFlow/StepOne.css";
-import { Input } from 'antd';
 import AuctionDropDown from "../../components/AuctionDropDown";
 import BudgetDropDown from "../../components/BudgetDropDown";
 import RadioDropDown from "../../components/RadioDropDown";
 import CampaignObjective from "../../components/CampaignObjective";
 import CurrencyInput from "../../components/currencyInput";
 import { useState } from 'react';
-import { Switch } from 'antd';
-import { InputNumber } from 'antd';
+import { InputNumber, Switch, Input } from 'antd';
 import CategoryDropDown from "../../components/categoryDropDown";
 
 
@@ -25,7 +23,7 @@ const StepOne = () => {
                 </div>
                 <div className="campaignNameInputOperation">
                     <Input className="campaignNameInput" />
-                    <div className="draftBtnContainerGlobal"><span className="draftTitleHeaderGlobal">Create template</span></div>
+                    <div className="draftBtnContainerGlobal marginLeft8"><span className="draftTitleHeaderGlobal">Create template</span></div>
                 </div>
             </div>
 

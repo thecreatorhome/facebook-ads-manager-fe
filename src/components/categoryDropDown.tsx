@@ -90,7 +90,7 @@ const CategoryDropDown = () => {
                             <div className='doubtIconContainer'><i className='doubtIcon' /></div>
                             <div>
                                 <div className="">Confirmed identity​</div>
-                                <div className="budgetDescriptionSpan lightColor">We require people who want to run issue, electoral or political ads to first upload a copy of a valid government-issued ID document. The ID information won't be displayed on ads or in the Meta Ad Library. Once we've confirmed your identity, we'll delete your ID within 30 days.</div>
+                                <div className="budgetDescriptionSpan lightColor marginTopBottom5">We require people who want to run issue, electoral or political ads to first upload a copy of a valid government-issued ID document. The ID information won't be displayed on ads or in the Meta Ad Library. Once we've confirmed your identity, we'll delete your ID within 30 days.</div>
                                 <div className="reviewPublishContainerGlobal">Confirm ID</div>
                             </div>
                         </div>
@@ -101,7 +101,7 @@ const CategoryDropDown = () => {
                             <div className='doubtIconContainer'><i className='doubtIcon' /></div>
                             <div>
                                 <div className="">No Pages set up to run ads​</div>
-                                <div className="budgetDescriptionSpan lightColor">Link a Page to an approved ad account, and create a disclaimer.</div>
+                                <div className="budgetDescriptionSpan lightColor marginTopBottom5">Link a Page to an approved ad account, and create a disclaimer.</div>
                             </div>
                         </div>
                     </div>

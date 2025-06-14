@@ -26,3 +26,16 @@
 .body{
   overflow: hidden;
 }
+
+.dividerForm {
+  height: 0;
+  border-bottom-style: solid;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-color: #cbd2d9;
+  background: #dadde1;
+  border-width: 0.01rem;
+  color: #dadde1;
+  line-height: 1.28;
+  width: 100%;
+}

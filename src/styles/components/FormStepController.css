@@ -9,3 +9,17 @@
     position: sticky;
     bottom: 0px;
 }
+
+.checkFormSaveEdit {
+    background-image: url("../../assets/separatorIcon.png");
+    background-position: -132px -199px;
+    background-size: 151px 249px;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.textEditColor {
+    color: #007e59;
+}

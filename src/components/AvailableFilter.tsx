@@ -37,7 +37,7 @@ const AvailableFilter = () => {
                     </div>
                 </div>
                 <div className="rightFilterContainer">
-                    <div className="draftBtnContainerGlobal">Create a view</div>
+                    <div className="draftBtnContainerGlobal marginLeft8">Create a view</div>
                     <div className="refreshBtnContainerGlobal"><div className="availableFilterSettings"></div></div>
                 </div>
             </div>

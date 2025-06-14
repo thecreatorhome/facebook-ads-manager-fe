@@ -50,10 +50,12 @@
     border: 0.7px solid #8e8b8b;
 }
 
+.marginLeft8 {
+    margin-left: 8px;
+}
 .draftBtnContainerGlobal {
     vertical-align: middle;
     display: inline-flex;
-    margin-left: 8px;
     line-height: 1.28;
     padding: 8px;
     border-radius: 4px;

@@ -139,7 +139,7 @@ const CampaignTable = () => {
             sorter: (a, b) => a.delivery.localeCompare(b.delivery),
             sortOrder: sortInfo.columnKey === "delivery" ? sortInfo.order : null,
             render: (record) => (
-                <div className="deliveryTextContainer"><span className={record == "Active" ? "activeGreenDot" : (record == "Off" ? "" : "draftGreenDot")} />{record}</div>
+                <div className="deliveryTextContainer"><span className={record === "Active" ? "activeGreenDot" : (record === "Off" ? "" : "draftGreenDot")} />{record}</div>
             )
         },
         {
@@ -343,22 +343,22 @@ const CampaignTable = () => {
         <>
             <div className="availableCampaignRecordOption">
                 <div>
-                <div className="draftBtnContainerGlobal createNewCampaign"  onClick={() => setCreateModalOpen(!createModalOpen)}>
+                <div className="draftBtnContainerGlobal marginLeft8 createNewCampaign"  onClick={() => setCreateModalOpen(!createModalOpen)}>
                     <div className="createIconFilter" />
                     <div className="CampaignRecordOptionTitle">Create</div>
                     <CreateModal isModalOpen={createModalOpen} setIsModalOpen={setCreateModalOpen}/>
                 </div>
-                <div className="draftBtnContainerGlobal"><div className="duplicateIcon inactiveIconOption"></div><span className="draftTitleHeaderGlobal inactiveOption">Duplicate</span></div>
-                <div className="draftBtnContainerGlobal"><div className="pencilEdit"></div><span className="draftTitleHeaderGlobal inactiveOption">Edit</span></div>
-                <div className="draftBtnContainerGlobal"><div className="abTestIcon"></div><span className="draftTitleHeaderGlobal">A/B test</span></div>
-                <div className="draftBtnContainerGlobal noBorder"><span className="draftTitleHeaderGlobal">More</span><div className="moreOptionIcon"></div></div>
+                <div className="draftBtnContainerGlobal marginLeft8"><div className="duplicateIcon inactiveIconOption"></div><span className="draftTitleHeaderGlobal inactiveOption">Duplicate</span></div>
+                <div className="draftBtnContainerGlobal marginLeft8"><div className="pencilEdit"></div><span className="draftTitleHeaderGlobal inactiveOption">Edit</span></div>
+                <div className="draftBtnContainerGlobal marginLeft8"><div className="abTestIcon"></div><span className="draftTitleHeaderGlobal">A/B test</span></div>
+                <div className="draftBtnContainerGlobal marginLeft8 noBorder"><span className="draftTitleHeaderGlobal">More</span><div className="moreOptionIcon"></div></div>
                 </div>
                 <div>
-                <div className="draftBtnContainerGlobal"><div className="colPerformanceOptionIcon"></div><span className="draftTitleHeaderGlobal">Columns: Performance</span><div className="moreOptionIcon"></div></div>
-                <div className="draftBtnContainerGlobal"><div className="breakdownOptionIcon"></div><span className="draftTitleHeaderGlobal">Breakdown</span><div className="moreOptionIcon"></div></div>
-                <div className="draftBtnContainerGlobal"><div className="reportOptionIcon"></div><span className="draftTitleHeaderGlobal">Reports</span><div className="moreOptionIcon"></div></div>
-                <div className="draftBtnContainerGlobal"><div className="exportOptionIcon"></div><span className="draftTitleHeaderGlobal">Exports</span><div className="moreOptionIcon"></div></div>
-                <div className="draftBtnContainerGlobal"><div className="chartOptionIcon"></div><span className="draftTitleHeaderGlobal">Charts</span></div>
+                <div className="draftBtnContainerGlobal marginLeft8"><div className="colPerformanceOptionIcon"></div><span className="draftTitleHeaderGlobal">Columns: Performance</span><div className="moreOptionIcon"></div></div>
+                <div className="draftBtnContainerGlobal marginLeft8"><div className="breakdownOptionIcon"></div><span className="draftTitleHeaderGlobal">Breakdown</span><div className="moreOptionIcon"></div></div>
+                <div className="draftBtnContainerGlobal marginLeft8"><div className="reportOptionIcon"></div><span className="draftTitleHeaderGlobal">Reports</span><div className="moreOptionIcon"></div></div>
+                <div className="draftBtnContainerGlobal marginLeft8"><div className="exportOptionIcon"></div><span className="draftTitleHeaderGlobal">Exports</span><div className="moreOptionIcon"></div></div>
+                <div className="draftBtnContainerGlobal marginLeft8"><div className="chartOptionIcon"></div><span className="draftTitleHeaderGlobal">Charts</span></div>
                 </div>
             </div>
             <Table dataSource={tableData} columns={columns} scroll={{ x: 1500 }}

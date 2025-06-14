@@ -3,9 +3,12 @@ import BreadCrumb from "../components/BreadCrumb";
 import CampaignLevelSideBar from "../components/CampaignLevelSideBar";
 import ActionMenu from "../components/ActionMenu";
 import StepOne from "../components/createFlow/stepOne";
+import StepTwo from "../components/createFlow/stepTwo";
 import FormStepController from "../components/formStepController";
+import { useState } from 'react';
 
 const CampaignsForm = () => {
+    const [formState, setformState] = useState(1);
     return (
         <>
             <div className="campaignFormScreenContainer">
@@ -21,8 +24,9 @@ const CampaignsForm = () => {
                         <div><ActionMenu /></div>
                     </div>
                     <div className="stepContainer">
-                        <StepOne />
-                        <FormStepController />
+                        {formState === 1 && <StepOne />}
+                        {formState === 2 && <StepTwo />}
+                        <FormStepController formState={formState} setFormState={setformState}/>
                     </div>
                 </div>
             </div>

@@ -21,6 +21,10 @@
     margin: 25px 5px 5px 0px;
 }
 
+.noMargin{
+    margin: 0px !important;
+}
+
 .displayColumn {
     display: flex;
     flex-direction: column;
@@ -63,6 +67,7 @@
 
 .inlineFlex {
     display: flex;
+    align-items: center;
 }
 
 .advantageBudgetInputContainer {
@@ -78,16 +83,8 @@
     margin-top: 5px;
 }
 
-.dividerForm {
-    height: 0;
-    border-bottom-style: solid;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    border-color: #cbd2d9;
-    background: #dadde1;
-    border-width: 0.01rem;
-    color: #dadde1;
-    line-height: 1.28;
+.marginTop10 {
+    margin-top: 10px;
 }
 
 .showMoreOption {

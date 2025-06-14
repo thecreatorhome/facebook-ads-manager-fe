@@ -35,7 +35,7 @@ const RadioDropDown = ( {optionsDropDown}: RadioDropDownProps) => {
     );
 
     return (
-        <Dropdown overlay={dropdownContent} trigger={['click']} className="budgetTypeOptionDropDown" >
+        <Dropdown overlay={dropdownContent} trigger={['click']} className="budgetTypeOptionDropDown marginTop10" >
             <Button>
                 {selectedLabel} <div className='dropDownIcon' />
             </Button>

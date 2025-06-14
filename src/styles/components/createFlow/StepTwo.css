@@ -1,0 +1,46 @@
+.datePicker {
+    width: 50%;
+}
+
+.timepicker {
+    width: 50%;
+}
+
+.ant-picker-outlined {
+    border-radius: 0px;
+}
+
+.starIcon {
+    background-image: url("../../../assets/startIconType.png");
+    background-position: -256px -135px;
+    background-size: 269px 420px;
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.plusCircleIcon {
+    background-image: url("../../../assets/plusIconType.png");
+    background-position: 0px -299px;
+    background-size: 25px 342px;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.marginRight5 {
+    margin-right: 5px;
+}
+
+.marginLeft5 {
+    margin-left: 5px;
+}
+
+.inlineJustifiedFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
