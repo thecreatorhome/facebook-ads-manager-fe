@@ -39,8 +39,54 @@
     margin-left: 5px;
 }
 
+.marginLeft10 {
+    margin-left: 10px;
+}
+
 .inlineJustifiedFlex {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.columnFlex {
+    display: flex;
+}
+
+.alignCenterItem {
+    align-content: center;
+}
+
+.campaignScoreInputTitle {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 5px 10px 10px 0px;
+    justify-content: space-between;
+}
+
+.graphIcon {
+    width: 60px;
+    height: 20px;
+    mask-image: url("../../../assets/graphIconType.png");
+    mask-size: 302px 1311px;
+    mask-position: -65px -1246px;
+    background-color: #1c2b33a6;
+}
+
+.lineMarker {
+    background-image: url("../../../assets/lineDivider.png");
+    background-position: 0px -36px;
+    background-size: 319px 81px;
+    width: 318px;
+    height: 8px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.secondColumnWidth {
+    width: 350px;
+}
+
+.inlineDisplay {
+    display: inline-block;
 }
