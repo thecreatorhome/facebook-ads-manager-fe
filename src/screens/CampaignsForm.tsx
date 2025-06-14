@@ -3,6 +3,7 @@ import BreadCrumb from "../components/BreadCrumb";
 import CampaignLevelSideBar from "../components/CampaignLevelSideBar";
 import ActionMenu from "../components/ActionMenu";
 import StepOne from "../components/createFlow/stepOne";
+import FormStepController from "../components/formStepController";
 
 const CampaignsForm = () => {
     return (
@@ -21,6 +22,7 @@ const CampaignsForm = () => {
                     </div>
                     <div className="stepContainer">
                         <StepOne />
+                        <FormStepController />
                     </div>
                 </div>
             </div>
