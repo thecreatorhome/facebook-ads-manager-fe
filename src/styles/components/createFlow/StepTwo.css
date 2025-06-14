@@ -90,3 +90,14 @@
 .inlineDisplay {
     display: inline-block;
 }
+
+.percentageEstimatesDailyReach {
+    background-color: rgb(84, 199, 236);
+    width: 5%;
+    height: 10px;
+}
+
+.percentageEstimatesDailyReachTotal {
+    background-color: #a6a8a9a6;
+    height: 10px;
+}

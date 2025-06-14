@@ -264,6 +264,21 @@ const StepTwo = () => {
                             <div className="flex"><div className='graphIcon' /><div className="budgetDescriptionSpan lightColor marginTop10 marginLeft10"><strong>Estimates do not include Advantage+ audience options</strong> and may vary significantly over time based on your targeting selections and available data.</div></div>
                         </div>
                     </div>
+
+                    <div className="campaignNameInbox secondColumnWidth">
+                        <div className="campaignNameInputTitle">
+                            <div className="inlineFlex">
+                                <div className="campaignBoxTitle">Estimated daily results</div>
+                            </div>
+                        </div>
+                        <div className="displayColumn">
+                            <div className="budgetDescriptionSpan">Reach<div className='infoIcon inlineDisplay' /></div>
+                            <div className="marginTop10"><h2 className="noMargin">20K - 59K</h2></div>
+                            <div className="percentageEstimatesDailyReachTotal marginTop10"><div className="percentageEstimatesDailyReach"/></div>
+                        </div>
+                        <hr className="dividerForm lightColor" />
+                        <div className="budgetDescriptionSpan lightColor">The accuracy of estimates is based on factors like past campaign data, the budget you entered, market data, targeting criteria and ad placements. Numbers are provided to give you an idea of performance for your budget, but are only estimates and don't guarantee results.</div>
+                    </div>
                 </div>
             </div>
         </>
