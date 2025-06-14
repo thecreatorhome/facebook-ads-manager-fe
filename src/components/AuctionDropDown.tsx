@@ -1,7 +1,6 @@
-// import "../styles/components/AuctionDropDown.css";
+import "../styles/components/AuctionDropDown.css";
 import { Button, Dropdown, Menu, MenuProps } from 'antd';
 import { useState } from "react";
-import { DownOutlined } from '@ant-design/icons';
 
 const AuctionDropDown = () => {
     const buyingTypeDropDown = [
@@ -30,9 +29,9 @@ const AuctionDropDown = () => {
     );
 
     return (
-        <Dropdown overlay={menu} trigger={['click']} className="buyingTypeOptionDropDown">
+        <Dropdown overlay={menu} trigger={['click']} className="auctionTypeOptionDropDown">
             <Button>
-                {selectedLabel}<DownOutlined />
+                {selectedLabel}<div className='dropDownIcon' />
             </Button>
         </Dropdown>
     );

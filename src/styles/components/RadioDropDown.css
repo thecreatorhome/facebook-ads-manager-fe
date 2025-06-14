@@ -1,0 +1,22 @@
+.radioOptionBudget {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 10px;
+}
+
+.budgetTypeOptionDropDown {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1%;
+}
+
+.dropDownIcon {
+    width: 16px;
+    height: 16px;
+    mask-image: url("../../assets/formIcons.png");
+    mask-size: 249px 1226px;
+    mask-position: -85px -1209px;
+    background-color: black;
+}

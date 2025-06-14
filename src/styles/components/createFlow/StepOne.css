@@ -9,7 +9,7 @@
 .campaignNameInputTitle {
     display: flex;
     align-items: center;
-    margin:  5px 10px 10px 0px;
+    margin: 5px 10px 10px 0px;
     justify-content: space-between;
 }
 
@@ -20,6 +20,7 @@
 .noMarginTopBottom {
     margin: 25px 5px 5px 0px;
 }
+
 .displayColumn {
     display: flex;
     flex-direction: column;
@@ -62,4 +63,43 @@
 
 .inlineFlex {
     display: flex;
+}
+
+.advantageBudgetInputContainer {
+    display: flex;
+}
+
+.budgetDescriptionSpan {
+    font-weight: 400;
+    font-size: .75rem !important;
+}
+
+.marginTop5 {
+    margin-top: 5px;
+}
+
+.dividerForm {
+    height: 0;
+    border-bottom-style: solid;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-color: #cbd2d9;
+    background: #dadde1;
+    border-width: 0.01rem;
+    color: #dadde1;
+    line-height: 1.28;
+}
+
+.showMoreOption {
+    margin-top: 16px;
+    line-height: 1.42858 !important;
+    font-size: 12px;
+    font-weight: 400;
+    color: #0a78be;
+    display: flex;
+    align-items: flex-end;
+}
+
+.interInput {
+    width: 100%;
 }

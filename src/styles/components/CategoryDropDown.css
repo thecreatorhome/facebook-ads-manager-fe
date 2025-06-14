@@ -1,0 +1,111 @@
+.categoryDropDownContainerBox {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.categoryDropDownContainerGroup {
+    background: white !important;
+    padding: 15px !important;
+    width: 100%;
+}
+
+.budgetTypeDropdownOverlay {
+    min-width: unset !important;
+    width: 50% !important;
+}
+
+.financialIcon {
+    background-image: url("../../assets/categoryIcon.png");
+    background-position: -21px -211px;
+    background-size: 41px 489px;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.categoryIconContainer {
+    display: flex;
+    align-items: center;
+}
+
+.employmentIcon {
+    background-image: url("../../assets/formIcons.png");
+    background-position: -153px -1141px;
+    background-size: 249px 1226px;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.housingIcon {
+    background-image: url("../../assets/formIcons.png");
+    background-position: 0px -1175px;
+    background-size: 249px 1226px;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.socialIssueIcon {
+    background-image: url("../../assets/formIcons.png");
+    background-position: -153px -1175px;
+    background-size: 249px 1226px;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.selectedInformationCategory {
+    overflow: hidden;
+}
+
+.lightColor {
+    color: #1c2b33a6;
+    margin: 5px 0px;
+}
+
+.doubtIcon {
+    background-image: url("../../assets/doubtIconType.png");
+    background-position: -452px -579px;
+    background-size: 493px 830px;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.categoryDoubtContainer {
+    display: flex;
+    align-items: flex-start;
+}
+
+.doubtIconContainer {
+    margin-right: 10px;
+    background-color: #f1f4f7;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.infoIcon {
+    width: 12px;
+    height: 12px;
+    mask-image: url("../../assets/infoIconType.png");
+    mask-size: 71px 551px;
+    mask-position: -56px -521px;
+    background-color: black;
+    margin-left: 10px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}

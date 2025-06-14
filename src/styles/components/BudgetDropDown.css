@@ -1,0 +1,13 @@
+.radioOptionBudget {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 10px;
+}
+
+.budgetTypeOptionDropDown {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1%;
+}
