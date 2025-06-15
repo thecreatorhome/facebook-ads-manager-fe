@@ -1,0 +1,11 @@
+.width220 {
+    width: 220px !important;
+}
+
+.gridWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 16px;
+    background-color: white;
+}

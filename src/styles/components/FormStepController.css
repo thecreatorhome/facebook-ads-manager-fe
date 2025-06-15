@@ -1,9 +1,7 @@
 .formStepControllerContainer {
-    height: 55px;
+    height: max-content;
     background: white;
     border: 0.1px solid #1c2b33a6;
-    display: flex;
-    justify-content: space-between;
     margin: 10px 10px 0px 0px;
     padding: 10px;
     position: sticky;

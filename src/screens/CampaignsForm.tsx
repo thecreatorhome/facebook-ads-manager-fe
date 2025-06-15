@@ -4,6 +4,7 @@ import CampaignLevelSideBar from "../components/CampaignLevelSideBar";
 import ActionMenu from "../components/ActionMenu";
 import StepOne from "../components/createFlow/stepOne";
 import StepTwo from "../components/createFlow/stepTwo";
+import StepThree from "../components/createFlow/stepThree";
 import FormStepController from "../components/formStepController";
 import { useState } from 'react';
 
@@ -26,6 +27,7 @@ const CampaignsForm = () => {
                     <div className="stepContainer">
                         {formState === 1 && <StepOne />}
                         {formState === 2 && <StepTwo />}
+                        {formState === 3 && <StepThree />}
                         <FormStepController formState={formState} setFormState={setformState}/>
                     </div>
                 </div>
