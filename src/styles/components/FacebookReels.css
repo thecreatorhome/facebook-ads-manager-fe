@@ -64,3 +64,34 @@
 .iconOptionContainerFacebookReels {
     top: -10px;
 }
+
+.marginTop30 {
+    margin-top: 30px;
+}
+
+.facebookReelsCarousel {
+    height: 270px;
+}
+
+.facebookReelsCarousel img {
+    height: 270px;
+}
+
+.footerFacebookReels {
+    position: relative;
+    bottom: 85px;
+}
+
+.columnHeadlineContainerFacebookReel {
+    margin-top: 22px;
+}
+
+.speakerTitleFacebookReels {
+    bottom: -10px;
+    position: relative;
+    left: -10px;
+}
+
+.learnMoreFlexFacebookReel {
+    justify-content: center !important;
+}

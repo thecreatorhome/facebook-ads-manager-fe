@@ -50,3 +50,12 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ```
 https://adsmanager.facebook.com/adsmanager/manage/campaigns?act=509601841428345&business_id=507059275204713&nav_entry_point=ads_ecosystem_navigation_menu&nav_source=ads_manager
 ```
+
+1. Instagram Reel
+2. AdsOnFacebookReel
+3. FacebookInStreamVideo
+4. FacebookSearch
+5. InstagramSearch
+6. InstagramStories 
+7. FacebookStories
+8. FacebookReels

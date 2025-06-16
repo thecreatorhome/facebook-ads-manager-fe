@@ -64,6 +64,10 @@
     margin-right: 10px;
 }
 
+.height140 {
+    height: 140px !important;
+}
+
 .loveIconInstagramSearch{
     background-image: url("../../assets/all-icon.png");
     background-position: 0px -1445px;
@@ -141,7 +145,6 @@
     font-weight: 600;
     color: var(--fds-white);
     line-height: 1.2857;
-
 }
 
 .headlineTitleContainerInstagramSearch {

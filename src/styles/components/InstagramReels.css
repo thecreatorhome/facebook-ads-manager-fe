@@ -100,3 +100,11 @@
 .speakerTitleInstagramReels {
     margin-left: 5px;
 }
+
+.instagramReelsCarousel {
+    height: 220px;
+}
+
+.instagramReelsCarousel img {
+    height: 220px;
+}

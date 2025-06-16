@@ -5,6 +5,8 @@ import StoryProgress from "./StoryProgress";
 interface InstagramStoriesProps {
     imageUrl: string;
     description: string;
+    title: string;
+    headerImgUrl: string;
 }
 
 /*
@@ -13,11 +15,30 @@ interface InstagramStoriesProps {
     description="Repairing your roof can help you save a lot of money in the long ru...More"/>
 );
 */
-const InstagramStories = ({ imageUrl, description }: InstagramStoriesProps) => {
+const InstagramStories = ({ imageUrl, description, title, headerImgUrl }: InstagramStoriesProps) => {
     return (
         <div className="InstagramContainer">
             <div className="StoryBreadCrumb">
                 <StoryProgress />
+            </div>
+            <div className="headlineContainerInstagramSearch height20">
+                <div className="headlineImageContainerInstagramSearch">
+                    <img className="headlineImageInstagramSearch" src={headerImgUrl} />
+                </div>
+                <div className="headlineTitleContainerInstagramSearch">
+                    <div className="headlineTitleInstagramSearch">
+                        {title}
+                    </div>
+                    <div className="headlineTitleInstagramSearch sponsoredClass">
+                        Sponsored
+                    </div>
+                </div>
+                <div className="controllerFBReel">
+                    <div className="inlineJustifiedFlex">
+                        <div><i className="optionController"></i></div>
+                        <div><i className="crossController"></i></div>
+                    </div>
+                </div>
             </div>
             <div className="LearnMore">
                 <div className="LinkClip"><LinkClip /></div>

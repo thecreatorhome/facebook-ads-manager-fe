@@ -11,7 +11,7 @@
     align-items: center;
     flex-direction: row;
     background-color: white;
-    height: 64px;
+    height: 55px;
 }
 
 .imageFbInStream {
@@ -77,7 +77,7 @@
 
 .videoFbInStream {
     background: #ebedf0;
-    height: 120px;
+    height: 90px;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -127,7 +127,7 @@
     align-items: center;
     flex-direction: row;
     flex-grow: 1;
-    margin: 12px;
+    margin: 2px;
 }
 
 .headlineImageContainerFbInStream {
@@ -204,15 +204,17 @@
 
 .imageContainerFbInStream {
     background-color: white;
-    height: 190px;
+    height: 150px;
     overflow-x: hidden;
     overflow-y: hidden;
     width: 228px;
-    padding-left: 13px;
+    padding-left: 7px;
     display: flex;
     object-fit: cover;
 }
-
+.imageFlexFbInStream img {
+    height: 90px;
+}
 .imageFlexFbInStream {
     flex-direction: column;
     display: flex;
@@ -221,7 +223,7 @@
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
     width: 124px;
-    height: 176px;
+    height: 140px;
     margin-right: 8px;
     background-color: #f1f3f5;
 }
@@ -250,17 +252,15 @@
 }
 
 .textLoaderFbInStream {
-    height: 40px;
+    height: 22px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    margin-left: 12px;
 }
 
 .footerImageBaseLineFbInStream {
     margin-right: 6px;
-    margin-left: 12px;
 }
 
 .dividerFbInStream {
@@ -285,7 +285,7 @@
 .textOptionImgFbInStream {
     font-size: .875rem;
     font-weight: bold;
-    margin-left: 4px;
+    /* margin-left: 4px; */
     line-height: 1.4286;
     color: #606770;
 }
@@ -293,8 +293,8 @@
 .likeOptionImgFbInStream  {
     background-image: url("../../assets/all-btn.png");
     background-position: 0px -184px;
-    background-size: 33px 243px;
-    width: 20px;
+    background-size: 20px 243px;
+    width: 15px;
     height: 20px;
     background-repeat: no-repeat;
     display: inline-block;
@@ -303,8 +303,8 @@
 .commentOptionImgFbInStream {
     background-image: url("../../assets/all-btn.png");
     background-position: 0px -79px;
-    background-size: 33px 243px;
-    width: 20px;
+    background-size: 20px 243px;
+    width: 15px;
     height: 20px;
     background-repeat: no-repeat;
     display: inline-block;
@@ -313,8 +313,8 @@
 .shareOptionImgFbInStream {
     background-image: url("../../assets/all-btn.png");
     background-position: 0px -205px;
-    background-size: 33px 243px;
-    width: 20px;
+    background-size: 20px 243px;
+    width: 15px;
     height: 20px;
     background-repeat: no-repeat;
     display: inline-block;

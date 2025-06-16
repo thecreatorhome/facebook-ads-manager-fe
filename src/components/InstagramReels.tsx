@@ -19,13 +19,13 @@ const InstagramReels = ({ imageUrlList, title, description, headerImgUrl }: Inst
                     <i className="cameraInstagramReels"></i>
                 </div>
             </div>
-            <Carousel arrows={true} dots={{ className: 'custom-dots' }}>
+            <Carousel arrows={true} dots={{ className: 'custom-dots' }} className="instagramReelsCarousel">
                 {imageUrlList.map((url, index) => (
                     <img
                         key={index}
                         src={url}
                         alt={`Instagram image ${index + 1}`}
-                        style={{ width: '200px', height: '200px', objectFit: 'cover', margin: '8px' }}
+                        style={{ width: '200px', height: '100%', objectFit: 'cover', margin: '8px' }}
                     />
                 ))}
             </Carousel>
@@ -54,7 +54,7 @@ const InstagramReels = ({ imageUrlList, title, description, headerImgUrl }: Inst
                         <span className="speakerTitleInstagramReels">sponsor</span>
                     </div>
                 </div>
-                <div className="iconOptionContainerInstagramSearch">
+                <div className="iconOptionContainerInstagramSearch height140">
                     <div><i className="loveIconInstagramSearch"></i></div>
                     <div><i className="chatIconInstagramSearch"></i></div>
                     <div><i className="forwardIconInstagramSearch"></i></div>

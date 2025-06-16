@@ -1,5 +1,5 @@
 .FacebookContainer {
-    height: 406px;
+    height: 395px;
     width: 228px;
     background: linear-gradient(to top, #D98B00, #D99700);
     border-radius: 3px;
@@ -48,7 +48,7 @@
 }
 
 .FacebookDescription {
-    margin-bottom: 63px;
+    margin-bottom: 20px;
     display: flex;
     padding-bottom: 5px !important;
     padding-top: 20px !important;

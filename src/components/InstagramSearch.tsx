@@ -26,7 +26,7 @@ const InstagramSearch = ({ title, imageUrlList, description, headerImgUrl }: Ins
                     <span className="headerTitleInstagramSearch">{'[search term]'}</span>
                 </div>
             </div>
-            <Carousel arrows={true} dots={{ className: 'custom-dots' }}>
+            <Carousel arrows={true} dots={{ className: 'custom-dots' }} className="instagramReelsCarousel">
                 {imageUrlList.map((url, index) => (
                     <img
                         key={index}
@@ -56,7 +56,7 @@ const InstagramSearch = ({ title, imageUrlList, description, headerImgUrl }: Ins
                     <div className="learnMoreDescriptionInstagramSearch">{description}</div>
                 </div>
 
-                <div className="iconOptionContainerInstagramSearch">
+                <div className="iconOptionContainerInstagramSearch height140">
                     <div><i className="loveIconInstagramSearch"></i></div>
                     <div><i className="chatIconInstagramSearch"></i></div>
                     <div><i className="forwardIconInstagramSearch"></i></div>
