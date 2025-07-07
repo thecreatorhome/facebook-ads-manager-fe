@@ -1,0 +1,58 @@
+.FacebookFeedContainer {
+    height: 395px;
+    width: 228px !important;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    /* vertical centering */
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .03);
+}
+
+.flex-wrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.separatorColor {
+    background-color: #606770;
+}
+
+.FacebookFeedScaleDown {
+    transform: scale(1, 0.88);
+    background: white !important;
+    padding: 19px 0px;
+}
+
+.black {
+    color: black !important;
+}
+
+.sponsoredFeedClass {
+    font-size: 0.60rem;
+    font-style: normal;
+    line-height: 1.3333;
+    color: #606770;
+    font-weight: 600;
+}
+
+.optionFeedController {
+    background-image: url("../../assets/facebookController.png");
+    background-position: 0px 0px;
+    background-size: 25px 217px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.crossFeedController {
+    background-image: url("../../assets/crossFacebookController.png");
+    background-position: 0px -67px;
+    background-size: 25px 411px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}

@@ -9,6 +9,10 @@ import FacebookInStreamVideo from "../../components/FacebookInStreamVideo";
 import InstagramReels from "../../components/InstagramReels";
 import InstagramSearch from "../../components/InstagramSearch";
 import InstagramStories from "../../components/InstagramStories";
+import FacebookFeed from "../../components/FacebookFeed";
+import FacebookVideoFeed from "../../components/FacebookVideoFeed";
+import FacebookProfileFeed from "../../components/FacebookProfileFeed";
+import { bodyImage, headerImage } from "../../constants";
 
 const StepThree = () => {
     const [enabledPartnershipAd, setPartnershipAd] = useState(false);
@@ -49,12 +53,12 @@ const StepThree = () => {
                     <div className="gridWrapper">
                         <InstagramStories
                             imageUrl="https://scontent.fblr1-4.fna.fbcdn.net/v/t45.1600-4/482247970_120217490093430647_6460530888921249763_n.jpg?stp=cp0_dst-jpg_q75_s640x640_spS444_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c02adf&_nc_ohc=G6FgjG9mqsAQ7kNvwFwtKed&_nc_oc=AdkEUOltl2jGZJ5EP7m1E8li9D4-RQl_h_yoMfKHi2UW01mpV7OdvfLCzSaFiyI21Zw&_nc_zt=1&_nc_ht=scontent.fblr1-4.fna&_nc_gid=4EhoW06Juq090o_yDjwocw&oh=00_AfNlVMiV2_sVo3hgZwg6YwSOugWw6UNeI3il8dx31OeHgw&oe=6854A6F3"
-                            description="Repairing your roof can help you save a lot of money in the long ru...More" 
+                            description="Repairing your roof can help you save a lot of money in the long ru...More"
                             title="Better"
                             headerImgUrl="https://scontent.fblr1-4.fna.fbcdn.net/v/t45.1600-4/482247970_120217490093430647_6460530888921249763_n.jpg?stp=cp0_dst-jpg_q75_s640x640_spS444_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c02adf&_nc_ohc=G6FgjG9mqsAQ7kNvwFwtKed&_nc_oc=AdkEUOltl2jGZJ5EP7m1E8li9D4-RQl_h_yoMfKHi2UW01mpV7OdvfLCzSaFiyI21Zw&_nc_zt=1&_nc_ht=scontent.fblr1-4.fna&_nc_gid=4EhoW06Juq090o_yDjwocw&oh=00_AfNlVMiV2_sVo3hgZwg6YwSOugWw6UNeI3il8dx31OeHgw&oe=6854A6F3" />
                         <FacebookStories
                             imageUrl="https://scontent.fblr1-4.fna.fbcdn.net/v/t45.1600-4/482247970_120217490093430647_6460530888921249763_n.jpg?stp=cp0_dst-jpg_q75_s640x640_spS444_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c02adf&_nc_ohc=G6FgjG9mqsAQ7kNvwFwtKed&_nc_oc=AdkEUOltl2jGZJ5EP7m1E8li9D4-RQl_h_yoMfKHi2UW01mpV7OdvfLCzSaFiyI21Zw&_nc_zt=1&_nc_ht=scontent.fblr1-4.fna&_nc_gid=4EhoW06Juq090o_yDjwocw&oh=00_AfNlVMiV2_sVo3hgZwg6YwSOugWw6UNeI3il8dx31OeHgw&oe=6854A6F3"
-                            description="Repairing your roof can help you save a lot of money in the long ru...More" 
+                            description="Repairing your roof can help you save a lot of money in the long ru...More"
                             title="Better"
                             headerImgUrl="https://scontent.fblr1-4.fna.fbcdn.net/v/t45.1600-4/482247970_120217490093430647_6460530888921249763_n.jpg?stp=cp0_dst-jpg_q75_s640x640_spS444_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c02adf&_nc_ohc=G6FgjG9mqsAQ7kNvwFwtKed&_nc_oc=AdkEUOltl2jGZJ5EP7m1E8li9D4-RQl_h_yoMfKHi2UW01mpV7OdvfLCzSaFiyI21Zw&_nc_zt=1&_nc_ht=scontent.fblr1-4.fna&_nc_gid=4EhoW06Juq090o_yDjwocw&oh=00_AfNlVMiV2_sVo3hgZwg6YwSOugWw6UNeI3il8dx31OeHgw&oe=6854A6F3" />
                         <InstagramReels
@@ -88,6 +92,19 @@ const StepThree = () => {
                             title="Better"
                             description="Repairing your roof can help you save a lot of money in the long run!... more"
                             headerImgUrl="https://scontent.fblr1-4.fna.fbcdn.net/v/t45.1600-4/482247970_120217490093430647_6460530888921249763_n.jpg?stp=cp0_dst-jpg_q75_s640x640_spS444_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c02adf&_nc_ohc=G6FgjG9mqsAQ7kNvwFwtKed&_nc_oc=AdkEUOltl2jGZJ5EP7m1E8li9D4-RQl_h_yoMfKHi2UW01mpV7OdvfLCzSaFiyI21Zw&_nc_zt=1&_nc_ht=scontent.fblr1-4.fna&_nc_gid=4EhoW06Juq090o_yDjwocw&oh=00_AfNlVMiV2_sVo3hgZwg6YwSOugWw6UNeI3il8dx31OeHgw&oe=6854A6F3" />
+                        <FacebookFeed
+                            imageUrl={bodyImage}
+                            title="Better Homes"
+                            headerImgUrl={headerImage} />
+                        <FacebookVideoFeed 
+                            imageUrl={bodyImage}
+                            title="Better Homes"
+                            headerImgUrl={headerImage} />
+                        <FacebookProfileFeed 
+                            imageUrl={bodyImage}
+                            title="Better Homes"
+                            description="Repairing your roof "
+                            headerImgUrl={headerImage} />
                     </div>
                 </div>
             </div>

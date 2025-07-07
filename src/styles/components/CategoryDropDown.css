@@ -80,6 +80,10 @@
     margin: 10px 0px;
 }
 
+.marginTopBottom20 {
+    margin: 20px 0px;
+}
+
 .doubtIcon {
     background-image: url("../../assets/doubtIconType.png");
     background-position: -452px -579px;

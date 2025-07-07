@@ -59,3 +59,15 @@ https://adsmanager.facebook.com/adsmanager/manage/campaigns?act=509601841428345&
 6. InstagramStories 
 7. FacebookStories
 8. FacebookReels
+9. Facebook Feed
+10. Facebook video feeds
+11. Facebook profile feed
+
+12. Facebook Marketplace
+13. Facebook right column
+14. Facebook in-stream videos
+15. Facebook search results
+16. Facebook Business Explore
+17. Instagram Explore
+18. Instagram Profile feed
+19. 
