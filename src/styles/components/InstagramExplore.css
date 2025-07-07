@@ -1,0 +1,38 @@
+.backOptionHeaderInstagramExplore {
+    background-image: url("../../assets/exploreOption.png");
+    background-position: 0px -506px;
+    background-size: 21px 1095px;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.instagramHeaderExploreTitle {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 12px;
+
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    -webkit-font-smoothing: antialiased;
+    border-bottom-color: #DADCDE;
+    background: #F5F6F7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.leftBackIcon {
+    flex: 0 0 auto;
+}
+
+.postNameInstagramExplore {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 600;
+    font-size: 0.75rem;
+    -webkit-font-smoothing: antialiased;
+}

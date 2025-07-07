@@ -66,12 +66,11 @@ https://adsmanager.facebook.com/adsmanager/manage/campaigns?act=509601841428345&
 5. InstagramSearch
 19. Instagram Feed
 18. Instagram Profile feed
-
-
 13. Instagram Explore
+
+
 16. Facebook search results
 20. Instagram Profile Reels
-
 14. Facebook right column
 17. Facebook Business Explore
 
