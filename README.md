@@ -51,26 +51,27 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 https://adsmanager.facebook.com/adsmanager/manage/campaigns?act=509601841428345&business_id=507059275204713&nav_entry_point=ads_ecosystem_navigation_menu&nav_source=ads_manager
 ```
 
-9. Facebook Feed
-6. InstagramStories 
-7. FacebookStories
-10. Facebook video feeds
-13. Instagram Explore Home
-12. Facebook Marketplace
-1. Instagram Reel
+# Supported Ads
+1. Facebook Feed
+2. InstagramStories 
+3. FacebookStories
+4. Facebook video feeds
+5. Instagram Explore Home
+6. Facebook Marketplace
+7. Instagram Reel
 8. FacebookReels
-2. AdsOnFacebookReel
-11. Facebook profile feed
-3. FacebookInStreamVideo
-4. FacebookSearch
-5. InstagramSearch
-19. Instagram Feed
-18. Instagram Profile feed
-13. Instagram Explore
+9. AdsOnFacebookReel
+10. Facebook profile feed
+11. FacebookInStreamVideo
+12. FacebookSearch
+13. InstagramSearch
+14. Instagram Feed
+15. Instagram Profile feed
+16. Instagram Explore
 
-
-16. Facebook search results
-20. Instagram Profile Reels
-14. Facebook right column
-17. Facebook Business Explore
+# More Variations Pending
+1. Facebook search results
+2. Instagram Profile Reels
+3. Facebook right column
+4. Facebook Business Explore
 
