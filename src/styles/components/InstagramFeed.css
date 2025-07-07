@@ -1,0 +1,68 @@
+.footerContainerInstagramFeed {
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 8px;
+}
+
+.footerOptionInstagramFeed {
+    display: flex;
+    flex-direction: row;
+    height: 39px;
+    width: 40%;
+    justify-content: space-around;
+}
+
+.likeOptionImgInstagramFeed {
+    background-image: url("../../assets/instagramOptions.png");
+    background-position: -49px -2460px;
+    background-size: 97px 3207px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.commentOptionImgInstagramFeed {
+    background-image: url("../../assets/instagramOptions.png");
+    background-position: -51px -2329px;
+    background-size: 97px 3207px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.shareOptionImgInstagramFeed {
+    background-image: url("../../assets/instagramOptions.png");
+    background-position: -49px -2385px;
+    background-size: 97px 3207px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.pokeOptionImgInstagramFeed {
+    background-image: url("../../assets/instagramOptions.png");
+    background-position: -49px -2635px;
+    background-size: 97px 3207px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.InstagramFeedScaleDown {
+    transform: scale(1, 0.88);
+    background: white !important;
+    border: 1px solid #EBEDF0;
+    overflow: hidden;
+}
+
+.instagramHeaderTitle {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 12px;
+}
