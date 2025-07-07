@@ -13,6 +13,7 @@ import FacebookFeed from "../../components/FacebookFeed";
 import FacebookVideoFeed from "../../components/FacebookVideoFeed";
 import FacebookProfileFeed from "../../components/FacebookProfileFeed";
 import { bodyImage, headerImage } from "../../constants";
+import FacebookMarketPlace from "../../components/FacebookMarketPlace";
 
 const StepThree = () => {
     const [enabledPartnershipAd, setPartnershipAd] = useState(false);
@@ -96,14 +97,18 @@ const StepThree = () => {
                             imageUrl={bodyImage}
                             title="Better Homes"
                             headerImgUrl={headerImage} />
-                        <FacebookVideoFeed 
+                        <FacebookVideoFeed
                             imageUrl={bodyImage}
                             title="Better Homes"
                             headerImgUrl={headerImage} />
-                        <FacebookProfileFeed 
+                        <FacebookProfileFeed
                             imageUrl={bodyImage}
                             title="Better Homes"
                             description="Repairing your roof "
+                            headerImgUrl={headerImage} />
+                        <FacebookMarketPlace
+                            imageUrl={bodyImage}
+                            title="Better Homes"
                             headerImgUrl={headerImage} />
                     </div>
                 </div>

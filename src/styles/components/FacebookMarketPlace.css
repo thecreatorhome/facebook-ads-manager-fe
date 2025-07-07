@@ -1,0 +1,28 @@
+.FacebookMarketPlaceScaleDown {
+    transform: scale(0.75, 0.85);
+    background: white !important;
+}
+
+.headlineTitleMarketPlace{
+    font-style: normal;
+    font-size: 0.975rem;
+    word-break: break-word;
+    font-weight: 800;
+    line-height: 1.2857;
+}
+
+.sponsoredMarketPlaceClass {
+    font-size: 0.90rem;
+    font-style: normal;
+    line-height: 1.3333;
+    color: #606770;
+    font-weight: 700;
+}
+
+.marketPlaceContainerBox {
+    border: 1px solid #EBEDF0;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+    padding-top: 24px;
+}
