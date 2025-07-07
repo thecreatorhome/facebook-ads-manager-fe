@@ -1,0 +1,55 @@
+.InstagramExploreHomeContainer {
+    height: 395px;
+    width: 228px;
+}
+
+.InstagramExploreHomeMiddleBox {
+    background-color: #f2f2f2;
+    width: 74px;
+    height: 74px;
+}
+
+.InstagramExploreHomeTopBox {
+    background-color: #f2f2f2;
+    width: 74px;
+    height: 37px;
+}
+
+
+.marginBottom2 {
+    margin-bottom: 2px;
+}
+
+.boxContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.VerticleFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.backgroundImage {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sponsoredInstagramHome {
+    font-size: .55rem;
+    color: #fff;
+}
+
+.sponsoredInstagramHomeFlex {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 3px;
+    width: 96%;
+}
+
+.shadeTitleInstagramHome {
+    background-image: linear-gradient(0deg, #0000, #0006);
+    height: 80%;
+}
