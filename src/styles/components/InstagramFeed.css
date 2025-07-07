@@ -65,4 +65,23 @@
     height: 40px;
     width: 100%;
     margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    -webkit-font-smoothing: antialiased;
+    border-bottom-color: #DADCDE;
+}
+
+.postTitleInstagramProfileFeed {
+    font-weight: bold;
+}
+
+.postNameInstagramProfileFeed {
+    font-size: 10px;
+    color: #abadaf;
+    font-weight: bold;
+    margin-top: 2px;
 }

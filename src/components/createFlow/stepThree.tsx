@@ -16,6 +16,7 @@ import { bodyImage, headerImage } from "../../constants";
 import FacebookMarketPlace from "../../components/FacebookMarketPlace";
 import InstagramExploreHome from "../../components/InstagramExploreHome";
 import InstagramFeed from "../../components/InstagramFeed";
+import InstagramProfileFeed from "../../components/InstagramProfileFeed";
 
 const StepThree = () => {
     const [enabledPartnershipAd, setPartnershipAd] = useState(false);
@@ -117,7 +118,11 @@ const StepThree = () => {
                         <InstagramFeed
                             imageUrl={bodyImage}
                             title="Better Homes"
-                            headerImgUrl={headerImage}/>
+                            headerImgUrl={headerImage} />
+                        <InstagramProfileFeed
+                            imageUrl={bodyImage}
+                            title="Better Homes"
+                            headerImgUrl={headerImage} />
                     </div>
                 </div>
             </div>
