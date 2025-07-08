@@ -51,3 +51,8 @@
     mask-position: 0px -948px;
     background-color: black;
 }
+
+
+.heightWindowFixerFinal {
+    height: 87vh;
+}

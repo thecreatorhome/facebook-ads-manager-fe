@@ -16,8 +16,8 @@ const StepTwo = () => {
     };
     return (
         <>
-            <div className="columnFlex">
-                <div>
+            <div className="columnFlex heightWindowFixer">
+                <div className="scroller">
                     <div className="campaignNameInbox">
                         <div className="campaignNameInputTitle">
                             <div className="inlineFlex">

@@ -107,3 +107,12 @@
     background-color: #a6a8a9a6;
     height: 10px;
 }
+
+.heightWindowFixer {
+    height: 90vh;
+    overflow: hidden;
+}
+
+.scroller {
+    overflow: scroll;
+}

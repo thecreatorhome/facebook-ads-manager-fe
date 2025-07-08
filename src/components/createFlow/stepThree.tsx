@@ -26,8 +26,8 @@ const StepThree = () => {
     const [enabledAdPreview, setAdPreview] = useState(false);
     return (
         <>
-            <div className="columnFlex">
-                <div>
+            <div className="columnFlex heightWindowFixerFinal">
+                <div className="scroller">
                     <div className="campaignNameInbox width480">
                         <div className="campaignNameInputTitle">
                             <div className="inlineFlex">
@@ -135,7 +135,7 @@ const StepThree = () => {
 
                 </div>
 
-                <div className="secondColumnWidthStepThree">
+                <div className="secondColumnWidthStepThree scroller">
                     <div className="campaignNameInbox columnFlex secondColumnWidthStepThree campaignScoreStepThree">
                         <div className="">
                             <GaugeChart value={100} className="guageStepThree" />
