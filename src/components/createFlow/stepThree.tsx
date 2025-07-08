@@ -150,9 +150,13 @@ const StepThree = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="campaignNameInbox columnFlex secondColumnWidthStepThree campaignScoreStepThree">
+                    <div className="campaignNameInbox columnFlex secondColumnWidthStepThree campaignScoreStepThree inlineJustifiedFlex">
                         <div className="campaignNameInputTitle">
                             <div className="marginLeft10"><Switch checked={enabledAdPreview} onChange={setAdPreview} /><span className="toogleTitle marginLeft10">Ad preview</span></div>
+                        </div>
+                        <div className="campaignNameInputTitle">
+                            <div className="draftBtnContainerGlobal marginLeft8"><div className="advancedPreviewImg"/><span className="draftTitleHeaderGlobal">Advanced preview</span></div>
+                            <div className="draftBtnContainerGlobal marginLeft8"><div className="forwardPreview"/><div className="downArrowPreview"/></div>
                         </div>
                     </div>
                     {enabledAdPreview &&
