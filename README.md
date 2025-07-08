@@ -76,5 +76,6 @@ https://adsmanager.facebook.com/adsmanager/manage/campaigns?act=509601841428345&
 4. Facebook Business Explore
 
 # 8-Jul-2025 (Tuesday)
-1. Advance Preview
+1. Three step form completion for 8 box only
+2. Advance Preview
 
