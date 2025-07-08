@@ -22,11 +22,13 @@ import GaugeChart from "../../components/guageChart"
 
 const StepThree = () => {
     const [enabledPartnershipAd, setPartnershipAd] = useState(false);
+    const [enabledLanguage, setLanguage] = useState(false);
+    const [enabledAdPreview, setAdPreview] = useState(false);
     return (
         <>
             <div className="columnFlex">
                 <div>
-                    <div className="campaignNameInbox width400">
+                    <div className="campaignNameInbox width480">
                         <div className="campaignNameInputTitle">
                             <div className="inlineFlex">
                                 <div className="greenCheck"></div>
@@ -39,7 +41,7 @@ const StepThree = () => {
                         </div>
                     </div>
 
-                    <div className="campaignNameInbox width400">
+                    <div className="campaignNameInbox width480">
                         <div className="campaignNameInputTitle">
                             <div className="inlineFlex">
                                 {enabledPartnershipAd && <div className="greenCheck"></div>}
@@ -54,7 +56,85 @@ const StepThree = () => {
                             <></>
                         }
                     </div>
+
+                    <div className="campaignNameInbox width480">
+                        <div className="campaignNameInputTitle">
+                            <div className="inlineFlex">
+                                <div className="greenCheck"></div>
+                                <div className="campaignBoxTitle">Identity</div>
+                            </div>
+                        </div>
+                        <div className="displayColumn">
+                            <div className="campaignInboxDescription">Choose the Facebook Page and Instagram account that this ad will be associated with.</div>
+                        </div>
+                    </div>
+
+                    <div className="campaignNameInbox width480">
+                        <div className="campaignNameInputTitle">
+                            <div className="inlineFlex">
+                                <div className="greenCheck"></div>
+                                <div className="campaignBoxTitle">Ad Setup</div>
+                            </div>
+                        </div>
+                        <div className="displayColumn">
+                            <div className="campaignInboxDescription">Choose the Facebook Page and Instagram account that this ad will be associated with.</div>
+                        </div>
+                    </div>
+
+                    <div className="campaignNameInbox width480">
+                        <div className="campaignNameInputTitle">
+                            <div className="inlineFlex">
+                                <div className="greenCheck"></div>
+                                <div className="campaignBoxTitle">Ad Creative</div>
+                            </div>
+                        </div>
+                        <div className="displayColumn">
+                            <div className="campaignInboxDescription">Select and optimize your ad text, media and enhancements.</div>
+                        </div>
+                    </div>
+
+                    <div className="campaignNameInbox width480">
+                        <div className="campaignNameInputTitle">
+                            <div className="inlineFlex">
+                                <div className="greenCheck"></div>
+                                <div className="campaignBoxTitle">Event details</div>
+                            </div>
+                        </div>
+                        <div className="displayColumn">
+                            <div className="campaignInboxDescription">Include event details for your ad. Your ad will display a title, start or end time, and a reminder button so your audience can get reminders about the event.</div>
+                        </div>
+                    </div>
+
+                    <div className="campaignNameInbox width480">
+                        <div className="campaignNameInputTitle">
+                            <div className="inlineFlex">
+                                {enabledLanguage && <div className="greenCheck"></div>}
+                                <div className="campaignBoxTitle">Languages</div>
+                            </div>
+                            <div><span className="toogleTitle">{enabledLanguage ? 'On' : 'Off'}</span><Switch checked={enabledLanguage} onChange={setLanguage} /></div>
+                        </div>
+                        <div className="displayColumn">
+                            <div className="campaignInboxDescription">Add your own translations or automatically translate your ad to reach people in more languages.</div>
+                        </div>
+                        {enabledLanguage &&
+                            <></>
+                        }
+                    </div>
+
+                    <div className="campaignNameInbox width480">
+                        <div className="campaignNameInputTitle">
+                            <div className="inlineFlex">
+                                <div className="greenCheck"></div>
+                                <div className="campaignBoxTitle">Tracking</div>
+                            </div>
+                        </div>
+                        <div className="displayColumn">
+                            <div className="campaignInboxDescription">Track event datasets that contain the conversions your ad might motivate. The dataset that contains the conversion selected for the ad account will be tracked by default.</div>
+                        </div>
+                    </div>
+
                 </div>
+
                 <div className="secondColumnWidthStepThree">
                     <div className="campaignNameInbox columnFlex secondColumnWidthStepThree campaignScoreStepThree">
                         <div className="">
@@ -70,80 +150,87 @@ const StepThree = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="gridWrapper">
-                        <InstagramStories
-                            imageUrl={bodyImage}
-                            description="Repairing your roof can help you save a lot of money in the long ru...More"
-                            title="Better"
-                            headerImgUrl={headerImage} />
-                        <FacebookStories
-                            imageUrl={bodyImage}
-                            description="Repairing your roof can help you save a lot of money in the long ru...More"
-                            title="Better"
-                            headerImgUrl={headerImage} />
-                        <InstagramReels
-                            title="Better"
-                            description="Repairing your roof can help you save a lot of money in the long run!... more"
-                            imageUrlList={[bodyImage, bodyImage, bodyImage]}
-                            headerImgUrl={headerImage} />
-                        <FacebookReels
-                            title="Better"
-                            description="Repairing your roof can help you save a lot of money in the long run!... more"
-                            imageUrlList={[bodyImage, bodyImage, bodyImage]}
-                            headerImgUrl={headerImage} />
-                        <AdsOnFacebookReel
-                            title="Better Home"
-                            imageUrl={bodyImage} />
-                        <FacebookInStreamVideo
-                            title="iNHOUSE"
-                            imageUrl={bodyImage}
-                            sideImageUrl={headerImage}
-                            headerImgUrl={headerImage}
-                        />
-                        <FacebookSearch
-                            headerImgUrl={headerImage}
-                            title="Better Home"
-                            description="Repairing your roof can help you save a.."
-                            imageUrl={bodyImage}
-                            sideImageUrl={headerImage}
-                        />
-                        <InstagramSearch
-                            imageUrlList={[bodyImage, bodyImage, bodyImage]}
-                            title="Better"
-                            description="Repairing your roof can help you save a lot of money in the long run!... more"
-                            headerImgUrl={headerImage} />
-                        <FacebookFeed
-                            imageUrl={bodyImage}
-                            title="Better Homes"
-                            headerImgUrl={headerImage} />
-                        <FacebookVideoFeed
-                            imageUrl={bodyImage}
-                            title="Better Homes"
-                            headerImgUrl={headerImage} />
-                        <FacebookProfileFeed
-                            imageUrl={bodyImage}
-                            title="Better Homes"
-                            description="Repairing your roof "
-                            headerImgUrl={headerImage} />
-                        <FacebookMarketPlace
-                            imageUrl={bodyImage}
-                            title="Better Homes"
-                            headerImgUrl={headerImage} />
-                        <InstagramExploreHome
-                            imageUrl={bodyImage} />
-                        <InstagramFeed
-                            imageUrl={bodyImage}
-                            title="Better Homes"
-                            headerImgUrl={headerImage} />
-                        <InstagramProfileFeed
-                            imageUrl={bodyImage}
-                            title="Better Homes"
-                            headerImgUrl={headerImage} />
-                        <InstagramExplore
-                            imageUrl={bodyImage}
-                            title="Better Homes"
-                            headerImgUrl={headerImage} />
+                    <div className="campaignNameInbox columnFlex secondColumnWidthStepThree campaignScoreStepThree">
+                        <div className="campaignNameInputTitle">
+                            <div className="marginLeft10"><Switch checked={enabledAdPreview} onChange={setAdPreview} /><span className="toogleTitle marginLeft10">Ad preview</span></div>
+                        </div>
                     </div>
+                    {enabledAdPreview &&
+                        <><div className="gridWrapper">
+                            <InstagramStories
+                                imageUrl={bodyImage}
+                                description="Repairing your roof can help you save a lot of money in the long ru...More"
+                                title="Better"
+                                headerImgUrl={headerImage} />
+                            <FacebookStories
+                                imageUrl={bodyImage}
+                                description="Repairing your roof can help you save a lot of money in the long ru...More"
+                                title="Better"
+                                headerImgUrl={headerImage} />
+                            <InstagramReels
+                                title="Better"
+                                description="Repairing your roof can help you save a lot of money in the long run!... more"
+                                imageUrlList={[bodyImage, bodyImage, bodyImage]}
+                                headerImgUrl={headerImage} />
+                            <FacebookReels
+                                title="Better"
+                                description="Repairing your roof can help you save a lot of money in the long run!... more"
+                                imageUrlList={[bodyImage, bodyImage, bodyImage]}
+                                headerImgUrl={headerImage} />
+                            <AdsOnFacebookReel
+                                title="Better Home"
+                                imageUrl={bodyImage} />
+                            <FacebookInStreamVideo
+                                title="iNHOUSE"
+                                imageUrl={bodyImage}
+                                sideImageUrl={headerImage}
+                                headerImgUrl={headerImage}
+                            />
+                            <FacebookSearch
+                                headerImgUrl={headerImage}
+                                title="Better Home"
+                                description="Repairing your roof can help you save a.."
+                                imageUrl={bodyImage}
+                                sideImageUrl={headerImage}
+                            />
+                            <InstagramSearch
+                                imageUrlList={[bodyImage, bodyImage, bodyImage]}
+                                title="Better"
+                                description="Repairing your roof can help you save a lot of money in the long run!... more"
+                                headerImgUrl={headerImage} />
+                            <FacebookFeed
+                                imageUrl={bodyImage}
+                                title="Better Homes"
+                                headerImgUrl={headerImage} />
+                            <FacebookVideoFeed
+                                imageUrl={bodyImage}
+                                title="Better Homes"
+                                headerImgUrl={headerImage} />
+                            <FacebookProfileFeed
+                                imageUrl={bodyImage}
+                                title="Better Homes"
+                                description="Repairing your roof "
+                                headerImgUrl={headerImage} />
+                            <FacebookMarketPlace
+                                imageUrl={bodyImage}
+                                title="Better Homes"
+                                headerImgUrl={headerImage} />
+                            <InstagramExploreHome
+                                imageUrl={bodyImage} />
+                            <InstagramFeed
+                                imageUrl={bodyImage}
+                                title="Better Homes"
+                                headerImgUrl={headerImage} />
+                            <InstagramProfileFeed
+                                imageUrl={bodyImage}
+                                title="Better Homes"
+                                headerImgUrl={headerImage} />
+                            <InstagramExplore
+                                imageUrl={bodyImage}
+                                title="Better Homes"
+                                headerImgUrl={headerImage} />
+                        </div></>
+                    }
                 </div>
             </div>
         </>
