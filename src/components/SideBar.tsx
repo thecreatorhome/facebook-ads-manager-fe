@@ -19,22 +19,22 @@ const SideBar: React.FC<SideBarProps> = ({ collapsed, toggleSidebar }) => {
             key: "Comapny",
             label: (
                 <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                  <img src={CompanyLogo} alt="" className="CompanyLogo" />
+                  <img alt="img"  src={CompanyLogo} className="CompanyLogo" />
                   <span>Meta</span>
                 </div>
               ),
-            icon: collapsed ? <img src={CompanyLogo} alt="" className="CompanyLogo" /> : "",
+            icon: collapsed ? <img alt="img"  src={CompanyLogo} className="CompanyLogo" /> : "",
             className: ""
         },
         {
             key: "Comapny",
             label: (
                 <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                  <img src={CampaignLogo} alt="" className="CompanyLogo" />
+                  <img alt="img"  src={CampaignLogo} className="CompanyLogo" />
                   <span></span>
                 </div>
               ),
-            icon: collapsed ? <img src={CampaignLogo} alt="" className="CompanyLogo" /> : "",
+            icon: collapsed ? <img alt="img"  src={CampaignLogo} className="CompanyLogo" /> : "",
             className: ""
         },
         {

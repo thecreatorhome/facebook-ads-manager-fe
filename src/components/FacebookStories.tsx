@@ -1,5 +1,6 @@
 import "../styles/components/FacebookStories.css";
 import StoryProgress from "./StoryProgress";
+import AdsActionMenu from "./AdsActionMenu";
 
 interface FacebookStoriesProps {
     imageUrl: string;
@@ -15,39 +16,45 @@ description="Repairing your roof can help you save a lot of money in the long ru
 */
 const FacebookStories = ({ imageUrl, description, title, headerImgUrl }: FacebookStoriesProps) => {
     return (
-        <div className="FacebookContainer">
-            <div className="StoryBreadCrumb">
-                <StoryProgress />
+        <div className="hoverMeForTitle">
+            <div className="flexAdsHeader">
+                <div className="flex"><div className="facebookIconTitle" /><div className="adsTitleConfig">Facebook stories</div></div>
+                <div><AdsActionMenu /></div>
             </div>
-            <div className="headlineContainerInstagramSearch height20">
-                <div className="headlineImageContainerInstagramSearch">
-                    <img className="headlineImageInstagramSearch" src={headerImgUrl} />
+            <div className="FacebookContainer">
+                <div className="StoryBreadCrumb">
+                    <StoryProgress />
                 </div>
-                <div className="headlineTitleContainerInstagramSearch">
-                    <div className="headlineTitleInstagramSearch">
-                        {title}
+                <div className="headlineContainerInstagramSearch height20">
+                    <div className="headlineImageContainerInstagramSearch">
+                        <img alt="img"  className="headlineImageInstagramSearch" src={headerImgUrl} />
                     </div>
-                    <div className="headlineTitleInstagramSearch sponsoredClass">
-                        Sponsored
+                    <div className="headlineTitleContainerInstagramSearch">
+                        <div className="headlineTitleInstagramSearch">
+                            {title}
+                        </div>
+                        <div className="headlineTitleInstagramSearch sponsoredClass">
+                            Sponsored
+                        </div>
+                    </div>
+                    <div className="controllerFBReel">
+                        <div className="inlineJustifiedFlex">
+                            <div><i className="optionController"></i></div>
+                            <div><i className="crossController"></i></div>
+                        </div>
                     </div>
                 </div>
-                <div className="controllerFBReel">
-                    <div className="inlineJustifiedFlex">
-                        <div><i className="optionController"></i></div>
-                        <div><i className="crossController"></i></div>
+                <div>
+                    <div className="FacebookImageContainer marginTop10">
+                        <img alt="img"  className="FacebookImage" src={imageUrl} />
                     </div>
+                    <div className="FacebookDescription"><span>{description}</span></div>
                 </div>
-            </div>
-            <div>
-                <div className="FacebookImageContainer marginTop10">
-                    <img className="FacebookImage" src={imageUrl} />
+                <div className="upArrowFacebook"></div>
+                <div className="FacebookLearnMore">
+                    <div className="FacebookLinkClip"></div>
+                    Learn more
                 </div>
-                <div className="FacebookDescription"><span>{description}</span></div>
-            </div>
-            <div className="upArrowFacebook"></div>
-            <div className="FacebookLearnMore">
-                <div className="FacebookLinkClip"></div>
-                Learn more
             </div>
         </div>
     );

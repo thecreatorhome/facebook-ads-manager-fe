@@ -1,5 +1,6 @@
 import "../styles/components/InstagramSearch.css";
 import { Carousel } from 'antd';
+import AdsActionMenu from "./AdsActionMenu";
 
 interface InstagramSearchProps {
     imageUrlList: string[];
@@ -17,6 +18,11 @@ interface InstagramSearchProps {
 
 const InstagramSearch = ({ title, imageUrlList, description, headerImgUrl }: InstagramSearchProps) => {
     return (
+        <div className="hoverMeForTitle">
+            <div className="flexAdsHeader">
+                <div className="flex"><div className="instagramIconTitle"/><div className="adsTitleConfig">Instagram search</div></div>
+                <div><AdsActionMenu/></div>
+            </div>
         <div className="instagramSearchContainer">
             <div className="headerInstagramSearch">
                 <div>
@@ -40,7 +46,7 @@ const InstagramSearch = ({ title, imageUrlList, description, headerImgUrl }: Ins
                 <div className="columnHeadlineContainerInstagramSearch">
                     <div className="headlineContainerInstagramSearch">
                         <div className="headlineImageContainerInstagramSearch">
-                            <img className="headlineImageInstagramSearch" src={headerImgUrl} />
+                            <img alt="img"  className="headlineImageInstagramSearch" src={headerImgUrl} />
                         </div>
                         <div className="headlineTitleContainerInstagramSearch">
                             <div className="headlineTitleInstagramSearch">{title}</div>
@@ -63,6 +69,7 @@ const InstagramSearch = ({ title, imageUrlList, description, headerImgUrl }: Ins
                     <div><i className="dotsIconInstagramSearch"></i></div>
                 </div>
             </div>
+        </div>
         </div>
     );
 };

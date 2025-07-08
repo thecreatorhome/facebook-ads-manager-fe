@@ -1,4 +1,5 @@
 import "../styles/components/FacebookSearch.css";
+import AdsActionMenu from "./AdsActionMenu";
 
 interface FacebookSearchProps {
     headerImgUrl: string;
@@ -20,29 +21,35 @@ interface FacebookSearchProps {
 
 const FacebookSearch = ({ headerImgUrl, title, imageUrl, sideImageUrl, description }: FacebookSearchProps) => {
     return (
-        <div className="FbSearchContainer">
-            <div>
-                <div className="headlineContainerFbSearch">
-                    <div className="headlineImageContainerFbInStream">
-                        <img className="headlineImageFbSearch" src={headerImgUrl} />
+        <div className="hoverMeForTitle">
+            <div className="flexAdsHeader">
+                <div className="flex"><div className="facebookIconTitle" /><div className="adsTitleConfig">Facebook Search</div></div>
+                <div><AdsActionMenu /></div>
+            </div>
+            <div className="FbSearchContainer">
+                <div>
+                    <div className="headlineContainerFbSearch">
+                        <div className="headlineImageContainerFbInStream">
+                            <img alt="img"  className="headlineImageFbSearch" src={headerImgUrl} />
+                        </div>
+                        <div className="headlineTitleContainerFbSearch">
+                            <div className="headlineTitleFbInStream">{title}</div>
+                            <div className="sponsoredTitleFbInStream">Sponsored</div>
+                        </div>
+                        <div className="controllerContainerFbSearch">
+                            <i className="actionFbInStream"></i>
+                        </div>
                     </div>
-                    <div className="headlineTitleContainerFbSearch">
-                        <div className="headlineTitleFbInStream">{title}</div>
-                        <div className="sponsoredTitleFbInStream">Sponsored</div>
-                    </div>
-                    <div className="controllerContainerFbSearch">
-                        <i className="actionFbInStream"></i>
-                    </div>
-                </div>
 
-                <div className="imageContainerFbSearch">
-                    <div className="">
-                        <img className="imageHolderFbSearch" src={imageUrl} />
-                        <div className="imgDescriptionFbSearch">{description}</div>
-                    </div>
-                    <div className="">
-                        <img className="imageHolderFbSearch" src={sideImageUrl} />
-                        <div className="imgDescriptionFbSearch">{description}</div>
+                    <div className="imageContainerFbSearch">
+                        <div className="">
+                            <img alt="img"  className="imageHolderFbSearch" src={imageUrl} />
+                            <div className="imgDescriptionFbSearch">{description}</div>
+                        </div>
+                        <div className="">
+                            <img alt="img"  className="imageHolderFbSearch" src={sideImageUrl} />
+                            <div className="imgDescriptionFbSearch">{description}</div>
+                        </div>
                     </div>
                 </div>
             </div>

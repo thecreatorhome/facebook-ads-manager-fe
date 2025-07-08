@@ -18,6 +18,7 @@ import InstagramExploreHome from "../../components/InstagramExploreHome";
 import InstagramFeed from "../../components/InstagramFeed";
 import InstagramProfileFeed from "../../components/InstagramProfileFeed";
 import InstagramExplore from "../../components/InstagramExplore";
+import GaugeChart from "../../components/guageChart"
 
 const StepThree = () => {
     const [enabledPartnershipAd, setPartnershipAd] = useState(false);
@@ -54,7 +55,21 @@ const StepThree = () => {
                         }
                     </div>
                 </div>
-                <div>
+                <div className="secondColumnWidthStepThree">
+                    <div className="campaignNameInbox columnFlex secondColumnWidthStepThree campaignScoreStepThree">
+                        <div className="">
+                            <GaugeChart value={100} className="guageStepThree" />
+                        </div>
+                        <div className="alignCenterItem marginLeft10">
+                            <div className="campaignScoreInputTitle">
+                                <div className="inlineFlex">
+                                    <div className="campaignBoxTitle">Campaign score</div>
+                                    <div className='infoIcon' />
+                                </div>
+                                <div className="campaignInboxDescription">Your campaign has room to improve.</div>
+                            </div>
+                        </div>
+                    </div>
                     <div className="gridWrapper">
                         <InstagramStories
                             imageUrl={bodyImage}

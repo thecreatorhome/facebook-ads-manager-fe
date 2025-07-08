@@ -9,3 +9,17 @@
     padding: 16px;
     background-color: white;
 }
+
+.secondColumnWidthStepThree {
+    width: 505px;
+}
+
+.guageStepThree {
+    height: 60px !important;
+}
+
+.campaignScoreStepThree {
+    margin: 10px 0px 5px 0px;
+    height: 66px;
+    padding: 0px;
+}

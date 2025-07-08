@@ -1,6 +1,11 @@
 import ReactECharts from 'echarts-for-react';
 
-const GaugeChart = ({ value = 65 }: { value?: number }) => {
+interface GaugeChartProps {
+  value?: number;
+  className?: string;
+}
+
+const GaugeChart = ({ value = 65, className = '' }: GaugeChartProps) => {
   const option = {
     series: [
       {
@@ -29,16 +34,16 @@ const GaugeChart = ({ value = 65 }: { value?: number }) => {
           show: false,
         },
         splitLine: {
-            show: false,
+          show: false,
         },
         axisLabel: {
-            show: false,
+          show: false,
         },
         detail: {
           valueAnimation: true,
           fontSize: 15,
           fontWeight: 'bold',
-          offsetCenter: [0, '-20%'],
+          offsetCenter: [0, '0%'],
           formatter: `{value}`,
         },
         data: [
@@ -50,7 +55,13 @@ const GaugeChart = ({ value = 65 }: { value?: number }) => {
     ],
   };
 
-  return <ReactECharts option={option} style={{ height: 80, width: 80 }} />;
+  return (
+    <ReactECharts
+      option={option}
+      className={className}
+      style={{ height: 80, width: 80 }}
+    />
+  );
 };
 
 export default GaugeChart;

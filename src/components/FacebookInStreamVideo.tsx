@@ -1,4 +1,5 @@
 import "../styles/components/FacebookInStreamVideo.css";
+import AdsActionMenu from "./AdsActionMenu";
 
 interface FacebookInStreamVideoProps {
     imageUrl: string;
@@ -14,69 +15,75 @@ FacebookInStreamVideo
     sideImageUrl="https://scontent.fblr1-6.fna.fbcdn.net/v/t45.1600-4/459597814_120211605965220647_5018815817225299628_n.jpg?stp=cp0_dst-jpg_q75_s480x480_spS444_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c02adf&_nc_ohc=x6tLKDbUpVUQ7kNvwGudTsR&_nc_oc=Adnf86GvEaArsnaymjcaT9AX5Dp4cROZgCFXkAKYgKhs2ntQKfAbnA5uhP2CxfJRiEM&_nc_zt=1&_nc_ht=scontent.fblr1-6.fna&_nc_gid=r2Kp2nHyj_NWXiPpjVgAtg&oh=00_AfLUmhpjdDj5qGmdwXx54K943MDnnGglMvoyS6sajvF3Zg&oe=683309EB"
 />
 */
-const FacebookInStreamVideo = ({title, imageUrl, sideImageUrl, headerImgUrl}:FacebookInStreamVideoProps) => {
+const FacebookInStreamVideo = ({ title, imageUrl, sideImageUrl, headerImgUrl }: FacebookInStreamVideoProps) => {
     return (
-        <div className="FbInStreamContainer">
-            <div className="HeaderFacebookFbInStream">
-                <div className="imageFbInStream"></div>
-                <div className="imageBaseLineDisplayFbInStream">
-                    <div className="imageBaseLineFbInStream" style={{ width: '104px' }}></div>
-                    <div className="imageBaseLineFbInStream"></div>
-                </div>
-                <div className="bottomDotsFbInStream">
-                    <i className="dotsFbInStream"></i>
-                    <i className="dotsFbInStream"></i>
-                    <i className="dotsFbInStream"></i>
-                </div>
+        <div className="hoverMeForTitle">
+            <div className="flexAdsHeader">
+                <div className="flex"><div className="facebookIconTitle" /><div className="adsTitleConfig">Facebook in-stream videos</div></div>
+                <div><AdsActionMenu /></div>
             </div>
-            <div className="videoFbInStream">
-                <div className="videoPlayContainerFbInStream">
-                    <i className="videoPlayBtnFbInStream"></i>
-                </div>
-            </div>
-            <div className="headlineContainerFbInStream">
-                <div className="headlineImageContainerFbInStream">
-                    <img className="headlineImageFbInStream" src={headerImgUrl} />
-                </div>
-                <div className="headlineTitleContainerFbInStream">
-                    <div className="headlineTitleFbInStream">{title}</div>
-                    <div className="sponsoredTitleFbInStream">Sponsored</div>
-                </div>
-                <div className="controllerContainerFbInStream">
-                    <i className="actionFbInStream"></i>
-                    <i className="upArrowFbInStream"></i>
-                </div>
-            </div>
-            <div className="imageContainerFbInStream">
-                <div className="imageFlexFbInStream">
-                    <div className="imageDisplayFbInStream">
-                        <img className="imageHolderFbInStream" src={imageUrl} />
+            <div className="FbInStreamContainer">
+                <div className="HeaderFacebookFbInStream">
+                    <div className="imageFbInStream"></div>
+                    <div className="imageBaseLineDisplayFbInStream">
+                        <div className="imageBaseLineFbInStream" style={{ width: '104px' }}></div>
+                        <div className="imageBaseLineFbInStream"></div>
+                    </div>
+                    <div className="bottomDotsFbInStream">
+                        <i className="dotsFbInStream"></i>
+                        <i className="dotsFbInStream"></i>
+                        <i className="dotsFbInStream"></i>
                     </div>
                 </div>
-                <div className="imageFlexFbInStream">
-                    <div className="imageDisplayFbInStream">
-                        <img className="imageHolderFbInStream" src={sideImageUrl} />
+                <div className="videoFbInStream">
+                    <div className="videoPlayContainerFbInStream">
+                        <i className="videoPlayBtnFbInStream"></i>
                     </div>
                 </div>
-            </div>
-            <div className="footerContainerFbInStream">
-                <div className="textLoaderFbInStream">
-                    <div className="imageBaseLineFbInStream footerImageBaseLineFbInStream" style={{ width: '160px' }}></div>
-                    <div className="imageBaseLineFbInStream footerImageBaseLineFbInStream" style={{ width: '55px' }}></div>
+                <div className="headlineContainerFbInStream">
+                    <div className="headlineImageContainerFbInStream">
+                        <img alt="img"  className="headlineImageFbInStream" src={headerImgUrl} />
+                    </div>
+                    <div className="headlineTitleContainerFbInStream">
+                        <div className="headlineTitleFbInStream">{title}</div>
+                        <div className="sponsoredTitleFbInStream">Sponsored</div>
+                    </div>
+                    <div className="controllerContainerFbInStream">
+                        <i className="actionFbInStream"></i>
+                        <i className="upArrowFbInStream"></i>
+                    </div>
                 </div>
-                <div className="dividerFbInStream"></div>
-                <div className="footerOptionFbInStream">
-                    <div className="optionFbInStream">
-                        <i className="likeOptionImgFbInStream" />
-                        <div className="textOptionImgFbInStream">Like</div>
+                <div className="imageContainerFbInStream">
+                    <div className="imageFlexFbInStream">
+                        <div className="imageDisplayFbInStream">
+                            <img alt="img"  className="imageHolderFbInStream" src={imageUrl} />
+                        </div>
                     </div>
-                    <div className="optionFbInStream">
-                        <i className="commentOptionImgFbInStream" />
-                        <div className="textOptionImgFbInStream">Comment</div>
+                    <div className="imageFlexFbInStream">
+                        <div className="imageDisplayFbInStream">
+                            <img alt="img"  className="imageHolderFbInStream" src={sideImageUrl} />
+                        </div>
                     </div>
-                    <div className="optionFbInStream">
-                        <i className="shareOptionImgFbInStream" />
-                        <div className="textOptionImgFbInStream">Share</div>
+                </div>
+                <div className="footerContainerFbInStream">
+                    <div className="textLoaderFbInStream">
+                        <div className="imageBaseLineFbInStream footerImageBaseLineFbInStream" style={{ width: '160px' }}></div>
+                        <div className="imageBaseLineFbInStream footerImageBaseLineFbInStream" style={{ width: '55px' }}></div>
+                    </div>
+                    <div className="dividerFbInStream"></div>
+                    <div className="footerOptionFbInStream">
+                        <div className="optionFbInStream">
+                            <i className="likeOptionImgFbInStream" />
+                            <div className="textOptionImgFbInStream">Like</div>
+                        </div>
+                        <div className="optionFbInStream">
+                            <i className="commentOptionImgFbInStream" />
+                            <div className="textOptionImgFbInStream">Comment</div>
+                        </div>
+                        <div className="optionFbInStream">
+                            <i className="shareOptionImgFbInStream" />
+                            <div className="textOptionImgFbInStream">Share</div>
+                        </div>
                     </div>
                 </div>
             </div>

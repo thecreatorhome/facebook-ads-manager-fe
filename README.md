@@ -75,3 +75,6 @@ https://adsmanager.facebook.com/adsmanager/manage/campaigns?act=509601841428345&
 3. Facebook right column
 4. Facebook Business Explore
 
+# 8-Jul-2025 (Tuesday)
+1. Advance Preview
+
