@@ -1,16 +1,17 @@
 import "../styles/components/AuctionDropDown.css";
 import { Button, Dropdown, Menu, MenuProps } from 'antd';
 import { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 const AuctionDropDown = () => {
     const buyingTypeDropDown = [
         {
-            key: '1',
+            key: uuidv4(),
             label: 'Auction',
             description: 'Buy in real-time with cost effective bidding.'
         },
         {
-            key: '2',
+            key: uuidv4(),
             label: 'Reservation',
             description: 'Buy in advancefor more predictable outcomes.'
         },
@@ -29,12 +30,20 @@ const AuctionDropDown = () => {
     );
 
     return (
-        <Dropdown overlay={menu} trigger={['click']} className="auctionTypeOptionDropDown">
-            <Button>
-                {selectedLabel}<div className='dropDownIcon' />
-            </Button>
-        </Dropdown>
+        <div onClick={(e) => e.stopPropagation()}>
+            <Dropdown
+                overlay={menu}
+                trigger={['click']}
+                className="auctionTypeOptionDropDown"
+                getPopupContainer={(triggerNode) => triggerNode.parentElement as HTMLElement}
+            >
+                <Button>
+                    {selectedLabel}<div className='dropDownIcon' />
+                </Button>
+            </Dropdown>
+        </div>
     );
+
 };
 
 export default AuctionDropDown;

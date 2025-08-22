@@ -2,6 +2,7 @@ import "../../styles/components/createFlow/CreateModal.css";
 import { Modal, Button, Radio, RadioChangeEvent, Dropdown, Menu, MenuProps } from 'antd';
 import { useState } from "react";
 import AuctionDropDown from "../../components/AuctionDropDown";
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -11,11 +12,12 @@ interface CreateModalProps {
 }
 
 const CreateModal = ({ isModalOpen, setIsModalOpen }: CreateModalProps) => {
-
+    const navigate = useNavigate();
     const handleContinue = () => {
         // Your logic for continue
         console.log("Continue clicked");
         setIsModalOpen(false);
+        navigate("/form");
     };
 
     const handleCancel = () => {
@@ -23,7 +25,7 @@ const CreateModal = ({ isModalOpen, setIsModalOpen }: CreateModalProps) => {
         setIsModalOpen(false);
     };
 
-    const [createCampaignType, setCreateCampaignType] = useState(1);
+    const [createCampaignType, setCreateCampaignType] = useState("Awareness");
 
     const onChangeCreateCampaignType = (e: RadioChangeEvent) => {
         console.log('setCreateCampaignType:', e.target.value);
@@ -32,7 +34,7 @@ const CreateModal = ({ isModalOpen, setIsModalOpen }: CreateModalProps) => {
 
     const createCampaignOptions = [
         {
-            "key": 1,
+            "key": "Awareness",
             "title": "Awareness",
             "icon": "awarenessIcon",
             "imageClass": "awarenessClass",
@@ -49,7 +51,7 @@ const CreateModal = ({ isModalOpen, setIsModalOpen }: CreateModalProps) => {
             ]
         },
         {
-            "key": 2,
+            "key": "Traffic",
             "title": "Traffic",
             "icon": "trafficIcon",
             "imageClass": "trafficClass",
@@ -66,7 +68,7 @@ const CreateModal = ({ isModalOpen, setIsModalOpen }: CreateModalProps) => {
             ]
         },
         {
-            "key": 3,
+            "key": "Engagement",
             "title": "Engagement",
             "icon": "engagementIcon",
             "imageClass": "engagementClass",
@@ -83,7 +85,7 @@ const CreateModal = ({ isModalOpen, setIsModalOpen }: CreateModalProps) => {
             ]
         },
         {
-            "key": 4,
+            "key": "Leads",
             "title": "Leads",
             "icon": "leadsIcon",
             "imageClass": "leadsClass",
@@ -100,7 +102,7 @@ const CreateModal = ({ isModalOpen, setIsModalOpen }: CreateModalProps) => {
             ]
         },
         {
-            "key": 5,
+            "key": "App promotion",
             "title": "App promotion",
             "icon": "appPromotionIcon",
             "imageClass": "appPromotionClass",
@@ -117,7 +119,7 @@ const CreateModal = ({ isModalOpen, setIsModalOpen }: CreateModalProps) => {
             ]
         },
         {
-            "key": 6,
+            "key": "Sales",
             "title": "Sales",
             "icon": "salesIcon",
             "imageClass": "salesClass",
@@ -154,60 +156,61 @@ const CreateModal = ({ isModalOpen, setIsModalOpen }: CreateModalProps) => {
                     </div>
                 }
             >
-                <div className="createCampaignOptionsContainer">
-                    <div className="createCampaignOption actionCreateCampaignOption">Create new campaign</div>
-                    <div className="createCampaignOption">New ad set or ad</div>
-                </div>
-                <div className="buyingTypeOptionContainer">
-                    <h4 className="goodForTitle">Choose a buying type</h4>
-                    <AuctionDropDown />
-                </div>
-                <div className="campaignObjectContainers">
-                    <div className="campaignObjectOptionContainer">
-                        <h3>Choose a campaign objective</h3>
-                        <Radio.Group onChange={onChangeCreateCampaignType} value={createCampaignType} className="createCampaignType">
-                            {
-                                createCampaignOptions.map(createCampaignOption =>
-                                    <Radio value={createCampaignOption.key}>
-                                        <div
-                                            className={
-                                                "createCampaignOptionBackground" +
-                                                (createCampaignOption.key === createCampaignType ? " createCampaignOptionActiveBackground" : "")
-                                            }
-                                        >
+                <div onClick={(e) => e.stopPropagation()}>
+                    <div className="createCampaignOptionsContainer">
+                        <div className="createCampaignOption actionCreateCampaignOption">Create new campaign</div>
+                        <div className="createCampaignOption">New ad set or ad <i><b>(coming soon)</b></i></div>
+                    </div>
+                    <div className="buyingTypeOptionContainer">
+                        <h4 className="goodForTitle">Choose a buying type</h4>
+                        <AuctionDropDown />
+                    </div>
+                    <div className="campaignObjectContainers">
+                        <div className="campaignObjectOptionContainer">
+                            <h3>Choose a campaign objective</h3>
+                            <Radio.Group onChange={onChangeCreateCampaignType} value={createCampaignType} className="createCampaignType">
+                                {
+                                    createCampaignOptions.map(createCampaignOption =>
+                                        <Radio value={createCampaignOption.key}>
                                             <div
-                                                className={createCampaignOption.icon + (createCampaignOption.key === createCampaignType ? " salesIconActive" : "")}>
+                                                className={
+                                                    "createCampaignOptionBackground" +
+                                                    (createCampaignOption.key === createCampaignType ? " createCampaignOptionActiveBackground" : "")
+                                                }
+                                            >
+                                                <div
+                                                    className={createCampaignOption.icon + (createCampaignOption.key === createCampaignType ? " salesIconActive" : "")}>
+                                                </div>
                                             </div>
+                                            <div>{createCampaignOption.title}</div>
+                                        </Radio>
+                                    )
+                                }
+                            </Radio.Group>
+                        </div>
+                        <div className="campaignObjectDetailContainer">
+                            {(() => {
+                                const selected = createCampaignOptions.find(
+                                    (option) => option.key === createCampaignType
+                                );
+                                return selected ? (
+                                    <>
+                                        <div className="createCampaignImageContainer"><div className={selected.imageClass}></div></div>
+                                        <h3 className="goodForTitle">{selected.title}</h3>
+                                        <span className="createCampaignDescription">{selected.description}</span>
+                                        <h3 className="goodForTitle">Good for:</h3>
+                                        <div>
+                                            {selected.badges.map((badge, index) => (
+                                                <div key={index} className="createBadgeTitleContainer">
+                                                    <div className="createBadgeTitle">{badge.title}</div>
+                                                </div>
+                                            ))}
                                         </div>
-                                        <div>{createCampaignOption.title}</div>
-                                    </Radio>
-                                )
-                            }
-                        </Radio.Group>
+                                    </>
+                                ) : null;
+                            })()}
+                        </div>
                     </div>
-                    <div className="campaignObjectDetailContainer">
-                        {(() => {
-                            const selected = createCampaignOptions.find(
-                                (option) => option.key === createCampaignType
-                            );
-                            return selected ? (
-                                <>
-                                    <div className="createCampaignImageContainer"><div className={selected.imageClass}></div></div>
-                                    <h3 className="goodForTitle">{selected.title}</h3>
-                                    <span className="createCampaignDescription">{selected.description}</span>
-                                    <h3 className="goodForTitle">Good for:</h3>
-                                    <div>
-                                        {selected.badges.map((badge, index) => (
-                                            <div key={index} className="createBadgeTitleContainer">
-                                                <div className="createBadgeTitle">{badge.title}</div>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </>
-                            ) : null;
-                        })()}
-                    </div>
-
                 </div>
             </Modal>
         </>
