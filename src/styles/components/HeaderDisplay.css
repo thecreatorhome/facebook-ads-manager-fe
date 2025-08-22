@@ -12,6 +12,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: linear-gradient(to right, #FAF1F1, #F1F4F7);
+    margin-top: -20px;
+    padding: 10px;
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
 .headerTitleGlobal {

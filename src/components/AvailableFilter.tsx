@@ -47,6 +47,7 @@ const AvailableFilter = () => {
                     allowClear
                     size="middle"
                     onKeyDown={onSearch}
+                    className="searchAvailableFilter"
                 />
             </div>
             <div className="availableCampaignTabsContainer">

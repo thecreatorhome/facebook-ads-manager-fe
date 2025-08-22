@@ -12,8 +12,10 @@ const Campaigns = () => {
             <Header className="Header" >
                 <HeaderDisplay />
             </Header>
-            <AvailableFilter />
-            <CampaignTable />
+            <div className="manageColorCode">
+                <AvailableFilter />
+                <CampaignTable />
+            </div>
         </>
     );
 };

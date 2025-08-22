@@ -5,6 +5,10 @@
     margin: 10px 0px;
 }
 
+.searchAvailableFilter.ant-input-group-wrapper {
+    width: 100% !important;
+}
+
 .availableCampaignSearchContainer {
     margin: 10px 0px;
 }
@@ -82,7 +86,7 @@
 .seeMoreIconFilter {
     width: 16px;
     height: 16px;
-    mask-image:  url("../../assets/infoAllIcon.png");
+    mask-image: url("../../assets/infoAllIcon.png");
     mask-size: 51px 220px;
     mask-position: -34px -169px;
     background-color: black;
@@ -141,6 +145,7 @@
 
 .availableCampaignTabsContainer {
     display: flex;
+    width: 50%;
 }
 
 .tabTitle {
@@ -160,7 +165,7 @@
     background-color: white;
     padding: 13px;
     margin-right: 10px;
-    width: 150px;
+    width: 100%;
 }
 
 .campaignTab {
@@ -172,7 +177,7 @@
     background-color: #0a78be;
 }
 
-.adSetsTab{
+.adSetsTab {
     width: 23px;
     height: 20px;
     mask-image: url("../../assets/all-in-one-logo.png");
@@ -181,7 +186,7 @@
     background-color: black;
 }
 
-.adsTab{
+.adsTab {
     width: 23px;
     height: 20px;
     mask-image: url("../../assets/all-in-one-logo.png");

@@ -77,11 +77,11 @@
 }
 
 .pencilEdit {
-  width: 22px;
-  height: 18px;
+  width: 17px;
+  height: 14px;
   mask-image: url("../../assets/all-in-one-logo.png");
-  mask-size: 571px 398px;
-  mask-position: -262px -351px;
+  mask-size: 371px 296px;
+  mask-position: -170px -261px;
   background-color: #807a7a;
   margin-left: 5px;
 }
