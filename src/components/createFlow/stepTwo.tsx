@@ -6,6 +6,7 @@ import BudgetDropDown from "../../components/BudgetDropDown";
 import CurrencyInput from "../../components/currencyInput";
 import type { CheckboxChangeEvent } from 'antd/es/checkbox';
 import GaugeChart from "../../components/guageChart"
+import AudienceController from "../../components/audienceController";
 
 const StepTwo = () => {
     const [enabledDynamicCreative, setDynamicCreative] = useState(false);
@@ -180,6 +181,7 @@ const StepTwo = () => {
                             </div>
                             <div className="displayColumn">
                                 <div className="campaignInboxDescription">Set criteria for where ads for this campaign can be delivered.</div>
+                                <AudienceController />
                             </div>
                             <hr className="dividerForm" />
                             <div className="showMoreOption">Show more options <div className='dropDownIcon' style={{ backgroundColor: '#0a78be' }} /></div>

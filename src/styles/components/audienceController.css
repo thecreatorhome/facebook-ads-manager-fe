@@ -1,0 +1,14 @@
+.locationText {
+    font-size: .75rem !important;
+    word-wrap: normal;
+    font-weight: 400;
+}
+
+.ageDropDown {
+    width: 100px;
+}
+
+.ageDropDownOption {
+    max-height: 190px;
+    overflow-y: auto;
+}
