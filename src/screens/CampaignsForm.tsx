@@ -15,13 +15,15 @@ const CampaignsForm = () => {
             <div className="campaignFormScreenContainer">
                 <div className="campaignLevelBarContainer">
                     <CampaignLevelSideBar
+                        formState={formState}
+                        setFormState={setformState}
                         campaignName="Roofing PR"
                         trafficAdSet="New Traffic ad set"
                         trafficAd="New Traffic" />
                 </div>
                 <div className="campaignFormBarContainer">
                     <div className="campaignFormBarContainerHeader">
-                        <BreadCrumb />
+                        <BreadCrumb formState={formState} setFormState={setformState} />
                         <div><ActionMenu /></div>
                     </div>
                     <div className="stepContainer">

@@ -22,3 +22,9 @@
 .textEditColor {
     color: #007e59;
 }
+
+.formStateBtnController {
+    display: flex;
+    width: 250px;
+    margin-left: 5px;
+}

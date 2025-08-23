@@ -26,7 +26,7 @@ const FormStepController = ({ setFormState, formState }: FormStepControllerProps
                 <div className="draftBtnContainerGlobal">Close</div>
                 <div className="marginLeft5 inlineJustifiedFlex textEditColor"><div className="checkFormSaveEdit marginRight5" />All edits saved</div>
             </div>
-            <div>
+            <div className="formStateBtnController">
                 {formState > 1 && formState < 3 && <div className="draftBtnContainerGlobal" onClick={handleBack}>Back</div>}
                 {formState < 3 && <div className="reviewPublishContainerGlobal" onClick={handleNext}>Next</div>}
                 {formState > 2 && <div className="draftBtnContainerGlobal" onClick={handleBack}>Discard draft</div>}
