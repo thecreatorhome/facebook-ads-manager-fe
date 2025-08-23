@@ -81,22 +81,22 @@ const CategoryDropDown = () => {
             </Dropdown>
             {selectedKeys.length > 0 && (selectedKeys.includes("Social issues, elections or politics") ?
                 <>
-                    <div className="displayColumn">
-                        <div><h4 className="noMarginTopBottom">Authorization to run issue, electoral or political ads</h4></div>
+                    <div className="displayColumn marginTop5">
+                        <div><h4 className="noMarginTopBottom fontWeight700">Authorization to run issue, electoral or political ads</h4></div>
                     </div>
-                    <div className="displayColumn">
-                        <div className='flex'><div><h4 className="">Confirmed identity​</h4></div><div className='infoIcon' /></div>
+                    <div className="displayColumn marginTop20">
+                        <div className='flex'><div><h4 className="fontWeight700">Confirmed identity​</h4></div><div className='infoIcon' /></div>
                         <div className='categoryDoubtContainer'>
                             <div className='doubtIconContainer'><i className='doubtIcon' /></div>
                             <div>
                                 <div className="">Confirmed identity​</div>
                                 <div className="budgetDescriptionSpan lightColor marginTopBottom5">We require people who want to run issue, electoral or political ads to first upload a copy of a valid government-issued ID document. The ID information won't be displayed on ads or in the Meta Ad Library. Once we've confirmed your identity, we'll delete your ID within 30 days.</div>
-                                <div className="reviewPublishContainerGlobal">Confirm ID</div>
+                                <div className="reviewPublishContainerGlobal marginTop10">Confirm ID</div>
                             </div>
                         </div>
                     </div>
-                    <div className="displayColumn">
-                        <div className='flex'><div><h4 className="">Pages and disclaimers​​</h4></div><div className='infoIcon' /></div>
+                    <div className="displayColumn marginTop20">
+                        <div className='flex'><div><h4 className="fontWeight700">Pages and disclaimers​​</h4></div><div className='infoIcon' /></div>
                         <div className='categoryDoubtContainer'>
                             <div className='doubtIconContainer'><i className='doubtIcon' /></div>
                             <div>
@@ -107,7 +107,7 @@ const CategoryDropDown = () => {
                     </div>
                 </>
                 :
-                <div className="displayColumn">
+                <div className="displayColumn marginTop20">
                     <div><h4 className="noMarginTopBottom">Countries</h4></div>
                     <div className="budgetDescriptionSpan">Select where you want to run this campaign. If there are additional requirements to run your ads in those locations, your advertising options will be adjusted.</div>
                     <AuctionDropDown />

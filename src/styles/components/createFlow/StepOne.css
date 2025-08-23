@@ -93,6 +93,10 @@
     margin-top: 10px;
 }
 
+.marginTop20 {
+    margin-top: 20px;
+}
+
 .showMoreOption {
     margin-top: 16px;
     line-height: 1.42858 !important;
@@ -105,4 +109,8 @@
 
 .interInput {
     width: 100%;
+}
+
+.marginLeft20Percent {
+    margin-left: 20%;
 }

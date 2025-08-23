@@ -120,3 +120,7 @@
     display: flex;
     align-items: center;
 }
+
+.fontWeight700 {
+    font-weight: 700;
+}

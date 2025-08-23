@@ -117,3 +117,7 @@
 .scroller {
     overflow: scroll;
 }
+
+.marginLeft15Percent {
+    margin-left: 15%;
+}
