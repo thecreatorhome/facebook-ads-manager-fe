@@ -56,3 +56,25 @@
 .heightWindowFixerFinal {
     height: 87vh;
 }
+
+
+.noImageUpload {
+    background-image: url("../../../assets/noImageUpload.png");
+    background-position: 0px -251px;
+    background-size: 401px 502px;
+    width: 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.noImageContainer {
+    background-color: #F8F8F8;
+    margin-top: -10px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

@@ -12,7 +12,6 @@ import InstagramStories from "../../components/InstagramStories";
 import FacebookFeed from "../../components/FacebookFeed";
 import FacebookVideoFeed from "../../components/FacebookVideoFeed";
 import FacebookProfileFeed from "../../components/FacebookProfileFeed";
-import { bodyImage, headerImage } from "../../constants";
 import FacebookMarketPlace from "../../components/FacebookMarketPlace";
 import InstagramExploreHome from "../../components/InstagramExploreHome";
 import InstagramFeed from "../../components/InstagramFeed";
@@ -25,6 +24,8 @@ const StepThree = () => {
     const [enabledPartnershipAd, setPartnershipAd] = useState(false);
     const [enabledLanguage, setLanguage] = useState(false);
     const [enabledAdPreview, setAdPreview] = useState(false);
+    const [bodyImage, setAdBodyImage] = useState("");
+    const [headerImage, setAdHeaderImage] = useState("");
     return (
         <>
             <div className="marginLeft15Percent">
@@ -92,7 +93,10 @@ const StepThree = () => {
                             </div>
                             <div className="displayColumn">
                                 <div className="campaignInboxDescription">Select and optimize your ad text, media and enhancements.</div>
-                                <AdCreativeDropDown />
+                                <AdCreativeDropDown
+                                    setAdHeaderImage={setAdHeaderImage}
+                                    setAdBodyImage={setAdBodyImage}
+                                />
                             </div>
                         </div>
 
@@ -163,7 +167,9 @@ const StepThree = () => {
                             </div>
                         </div>
                         {enabledAdPreview &&
-                            <><div className="gridWrapper">
+                            <>
+                            {(bodyImage && headerImage) ? 
+                            <div className="gridWrapper">
                                 <InstagramStories
                                     imageUrl={bodyImage}
                                     description="Repairing your roof can help you save a lot of money in the long ru...More"
@@ -236,7 +242,9 @@ const StepThree = () => {
                                     imageUrl={bodyImage}
                                     title="Better Homes"
                                     headerImgUrl={headerImage} />
-                            </div></>
+                            </div>
+                            :
+                            <div className="noImageContainer"> <i className="noImageUpload" />Add media to see ad examples.</div>}</>
                         }
                     </div>
                 </div>

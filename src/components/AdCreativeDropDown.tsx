@@ -4,7 +4,12 @@ import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import UploadCreativeModal from "../components/UploadCreativeModal";
 
-const AdCreativeDropDown = () => {
+interface AdCreativeDropDownProps {
+  setAdHeaderImage: React.Dispatch<React.SetStateAction<string>>;
+  setAdBodyImage: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const AdCreativeDropDown = ({setAdHeaderImage, setAdBodyImage}: AdCreativeDropDownProps) => {
   const buyingTypeDropDown = [
     {
       key: uuidv4(),
@@ -69,10 +74,12 @@ const AdCreativeDropDown = () => {
           <div className="dropDownIcon" />
         </Button>
       </Dropdown>
-      
+
       <UploadCreativeModal
         isAdCreativeUploaderVisible={isAdCreativeUploaderVisible}
         setAdCreativeUploaderVisible={setAdCreativeUploaderVisible}
+        setAdHeaderImage={setAdHeaderImage}
+        setAdBodyImage={setAdBodyImage}
       />
     </div>
   );
