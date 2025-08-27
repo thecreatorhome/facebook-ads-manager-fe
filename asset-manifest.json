@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/facebook-ads-manager-fe/static/css/main.5d4d3cc5.css",
-    "main.js": "/facebook-ads-manager-fe/static/js/main.ee621487.js",
+    "main.js": "/facebook-ads-manager-fe/static/js/main.55aa4d65.js",
     "static/js/453.77bd89b0.chunk.js": "/facebook-ads-manager-fe/static/js/453.77bd89b0.chunk.js",
     "static/media/all-icon.png": "/facebook-ads-manager-fe/static/media/all-icon.8b13c687aa69f299f11b.png",
     "static/media/formIcons.png": "/facebook-ads-manager-fe/static/media/formIcons.830bf8c62eeb1dc76a81.png",
@@ -24,11 +24,11 @@
     "static/media/metaLogo.svg": "/facebook-ads-manager-fe/static/media/metaLogo.a149962eea39436a2c3da5f8513d81e0.svg",
     "index.html": "/facebook-ads-manager-fe/index.html",
     "main.5d4d3cc5.css.map": "/facebook-ads-manager-fe/static/css/main.5d4d3cc5.css.map",
-    "main.ee621487.js.map": "/facebook-ads-manager-fe/static/js/main.ee621487.js.map",
+    "main.55aa4d65.js.map": "/facebook-ads-manager-fe/static/js/main.55aa4d65.js.map",
     "453.77bd89b0.chunk.js.map": "/facebook-ads-manager-fe/static/js/453.77bd89b0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5d4d3cc5.css",
-    "static/js/main.ee621487.js"
+    "static/js/main.55aa4d65.js"
   ]
 }
