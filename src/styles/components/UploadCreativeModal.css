@@ -1,5 +1,5 @@
 .uploadCreativeModal .ant-modal-content {
-    width: 60vw;
+    width: 40vw;
     /* 60% of viewport width */
     max-width: 1200px;
     /* optional cap */
@@ -15,6 +15,11 @@
     height: 100%;
 }
 
+.uploadCreativeModal .ant-modal-footer{
+    margin-top: -50px;
+    margin-right: 20px;
+}
+
 .creativeOptions {
     background: linear-gradient(to bottom, #FAF1F1, #E5F0FA);
     padding: 10px;
@@ -26,8 +31,13 @@
     height: 100%;
 }
 
+.uploadHandlerOption {
+    padding-top: 20px;
+}
+
 .creativeUpload {
     padding: 10px;
+    padding-top: 20px;
 }
 
 .optionText {

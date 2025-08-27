@@ -54,7 +54,7 @@ const UploadCreativeModal = ({
       onOk={handleOk}
       onCancel={handleCancel}
       centered
-      footer={null}
+      // footer={null}
     >
       <div className="flexUploadCreativeModal">
         <div className="creativeOptions">
@@ -68,6 +68,7 @@ const UploadCreativeModal = ({
             beforeUpload={() => false} // prevent auto-upload
             multiple
             onChange={handleUploadChange}
+            className="uploadHandlerOption"
           >
             <div>
               <UploadOutlined />
