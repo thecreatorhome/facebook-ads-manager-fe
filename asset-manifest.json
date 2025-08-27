@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/facebook-ads-manager-fe/static/css/main.f25ef3bd.css",
-    "main.js": "/facebook-ads-manager-fe/static/js/main.05830155.js",
+    "main.css": "/facebook-ads-manager-fe/static/css/main.0994695d.css",
+    "main.js": "/facebook-ads-manager-fe/static/js/main.55adbd55.js",
     "static/js/453.77bd89b0.chunk.js": "/facebook-ads-manager-fe/static/js/453.77bd89b0.chunk.js",
     "static/media/all-icon.png": "/facebook-ads-manager-fe/static/media/all-icon.8b13c687aa69f299f11b.png",
     "static/media/formIcons.png": "/facebook-ads-manager-fe/static/media/formIcons.830bf8c62eeb1dc76a81.png",
@@ -25,12 +25,12 @@
     "static/media/availableAppsIcon.png": "/facebook-ads-manager-fe/static/media/availableAppsIcon.2e4246dd0e8364926997.png",
     "static/media/metaLogo.svg": "/facebook-ads-manager-fe/static/media/metaLogo.a149962eea39436a2c3da5f8513d81e0.svg",
     "index.html": "/facebook-ads-manager-fe/index.html",
-    "main.f25ef3bd.css.map": "/facebook-ads-manager-fe/static/css/main.f25ef3bd.css.map",
-    "main.05830155.js.map": "/facebook-ads-manager-fe/static/js/main.05830155.js.map",
+    "main.0994695d.css.map": "/facebook-ads-manager-fe/static/css/main.0994695d.css.map",
+    "main.55adbd55.js.map": "/facebook-ads-manager-fe/static/js/main.55adbd55.js.map",
     "453.77bd89b0.chunk.js.map": "/facebook-ads-manager-fe/static/js/453.77bd89b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f25ef3bd.css",
-    "static/js/main.05830155.js"
+    "static/css/main.0994695d.css",
+    "static/js/main.55adbd55.js"
   ]
 }
