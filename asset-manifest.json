@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/facebook-ads-manager-fe/static/css/main.5d4d3cc5.css",
+    "main.js": "/facebook-ads-manager-fe/static/js/main.ee621487.js",
+    "static/js/453.77bd89b0.chunk.js": "/facebook-ads-manager-fe/static/js/453.77bd89b0.chunk.js",
+    "static/media/all-icon.png": "/facebook-ads-manager-fe/static/media/all-icon.8b13c687aa69f299f11b.png",
+    "static/media/formIcons.png": "/facebook-ads-manager-fe/static/media/formIcons.830bf8c62eeb1dc76a81.png",
+    "static/media/instagramOptions.png": "/facebook-ads-manager-fe/static/media/instagramOptions.425e35f8e0b8f816b07f.png",
+    "static/media/advancedPreview.png": "/facebook-ads-manager-fe/static/media/advancedPreview.d6902768cc3be1ce931f.png",
+    "static/media/graphIconType.png": "/facebook-ads-manager-fe/static/media/graphIconType.f9482cfbe98ff0aa4746.png",
+    "static/media/all-in-one-logo.png": "/facebook-ads-manager-fe/static/media/all-in-one-logo.9d405ad44dcbeab13128.png",
+    "static/media/startIconType.png": "/facebook-ads-manager-fe/static/media/startIconType.680488f05955b0d3ca5e.png",
+    "static/media/doubtIconType.png": "/facebook-ads-manager-fe/static/media/doubtIconType.35513c75e5c645eb1d65.png",
+    "static/media/createCampaignImages.png": "/facebook-ads-manager-fe/static/media/createCampaignImages.7a61ef27e56bc1f017ff.png",
+    "static/media/availableFilterIcon.png": "/facebook-ads-manager-fe/static/media/availableFilterIcon.f6f45cb3d8ea370782cb.png",
+    "static/media/infoIconType.png": "/facebook-ads-manager-fe/static/media/infoIconType.b36ffba60235f760a678.png",
+    "static/media/categoryIcon.png": "/facebook-ads-manager-fe/static/media/categoryIcon.6637a401542472f00f16.png",
+    "static/media/headerIcons.png": "/facebook-ads-manager-fe/static/media/headerIcons.a6fa4e1940408d97108e.png",
+    "static/media/separatorIcon.png": "/facebook-ads-manager-fe/static/media/separatorIcon.4ab95a509a6bf896b558.png",
+    "static/media/downArrow.png": "/facebook-ads-manager-fe/static/media/downArrow.42ecd001b9844bb964d1.png",
+    "static/media/exploreOption.png": "/facebook-ads-manager-fe/static/media/exploreOption.42ecd001b9844bb964d1.png",
+    "static/media/forwardPreview.png": "/facebook-ads-manager-fe/static/media/forwardPreview.eb0eb6734080e849e69e.png",
+    "static/media/availableAppsIcon.png": "/facebook-ads-manager-fe/static/media/availableAppsIcon.2e4246dd0e8364926997.png",
+    "static/media/metaLogo.svg": "/facebook-ads-manager-fe/static/media/metaLogo.a149962eea39436a2c3da5f8513d81e0.svg",
+    "index.html": "/facebook-ads-manager-fe/index.html",
+    "main.5d4d3cc5.css.map": "/facebook-ads-manager-fe/static/css/main.5d4d3cc5.css.map",
+    "main.ee621487.js.map": "/facebook-ads-manager-fe/static/js/main.ee621487.js.map",
+    "453.77bd89b0.chunk.js.map": "/facebook-ads-manager-fe/static/js/453.77bd89b0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d4d3cc5.css",
+    "static/js/main.ee621487.js"
+  ]
+}
