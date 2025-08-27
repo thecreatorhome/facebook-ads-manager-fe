@@ -1,0 +1,33 @@
+.adCreativeTypeOptionDropDown {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.imageCreative {
+    background-image: url("../../assets/adCreatives.png");
+    background-position: 0px -107px;
+    background-size: 17px 277px;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.videoCreative {
+    background-image: url("../../assets/adCreatives.png");
+    background-position: 0px -175px;
+    background-size: 17px 277px;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.ant-dropdown-menu-title-content{
+    display: flex;
+    align-items: center;
+}

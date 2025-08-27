@@ -18,7 +18,8 @@ import InstagramExploreHome from "../../components/InstagramExploreHome";
 import InstagramFeed from "../../components/InstagramFeed";
 import InstagramProfileFeed from "../../components/InstagramProfileFeed";
 import InstagramExplore from "../../components/InstagramExplore";
-import GaugeChart from "../../components/guageChart"
+import GaugeChart from "../../components/guageChart";
+import AdCreativeDropDown from "../../components/AdCreativeDropDown";
 
 const StepThree = () => {
     const [enabledPartnershipAd, setPartnershipAd] = useState(false);
@@ -91,6 +92,7 @@ const StepThree = () => {
                             </div>
                             <div className="displayColumn">
                                 <div className="campaignInboxDescription">Select and optimize your ad text, media and enhancements.</div>
+                                <AdCreativeDropDown />
                             </div>
                         </div>
 
