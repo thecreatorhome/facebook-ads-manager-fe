@@ -39,7 +39,7 @@ const App: React.FC = () => {
   ];
 
   return (
-    <Router>
+    <Router basename="/facebook-ads-manager-fe">
       <Layout style={{ height: "100vh" }}>
         {/* Sidebar */}
         <SideBar collapsed={collapsed} toggleSidebar={toggleSidebar} />
