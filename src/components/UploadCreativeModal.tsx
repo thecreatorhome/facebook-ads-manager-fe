@@ -1,5 +1,6 @@
 import { Modal, Upload } from "antd";
 import { UploadOutlined } from "@ant-design/icons";
+import "../styles/components/UploadCreativeModal.css";
 
 interface UploadCreativeModalProps {
   isAdCreativeUploaderVisible: boolean;
@@ -48,23 +49,34 @@ const UploadCreativeModal = ({
 
   return (
     <Modal
-      title="Upload Creative Image"
+      className="uploadCreativeModal"
       open={isAdCreativeUploaderVisible}
       onOk={handleOk}
       onCancel={handleCancel}
       centered
+      footer={null}
     >
-      <Upload
-        listType="picture-card"
-        beforeUpload={() => false} // prevent auto-upload
-        multiple
-        onChange={handleUploadChange}
-      >
-        <div>
-          <UploadOutlined />
-          <div style={{ marginTop: 8 }}>Upload</div>
+      <div className="flexUploadCreativeModal">
+        <div className="creativeOptions">
+          <div className="campaignBoxTitle">Set up your creative</div>
+          <div className="optionText"><i className="mediaOption" />Media</div>
         </div>
-      </Upload>
+        <div className="creativeUpload">
+          <div className="campaignBoxTitle">Media</div>
+          <Upload
+            listType="picture-card"
+            beforeUpload={() => false} // prevent auto-upload
+            multiple
+            onChange={handleUploadChange}
+          >
+            <div>
+              <UploadOutlined />
+              <div style={{ marginTop: 8 }}>Upload</div>
+            </div>
+          </Upload>
+        </div>
+      </div>
+
     </Modal>
   );
 };

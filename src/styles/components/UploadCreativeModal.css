@@ -1,0 +1,52 @@
+.uploadCreativeModal .ant-modal-content {
+    width: 60vw;
+    /* 60% of viewport width */
+    max-width: 1200px;
+    /* optional cap */
+    height: 60vh;
+    /* 60% of viewport height */
+}
+
+.uploadCreativeModal .ant-modal-content {
+    padding: 0px !important;
+}
+
+.uploadCreativeModal .ant-modal-body {
+    height: 100%;
+}
+
+.creativeOptions {
+    background: linear-gradient(to bottom, #FAF1F1, #E5F0FA);
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.flexUploadCreativeModal {
+    display: flex;
+    height: 100%;
+}
+
+.creativeUpload {
+    padding: 10px;
+}
+
+.optionText {
+    display: flex;
+    font-weight: 400;
+    padding: 8px;
+    border-radius: 4px;
+    color: #3086C6;
+    background-color: #E1EDF7;
+    margin-top: 10px;
+}
+
+.mediaOption {
+    background-image: url("../../assets/UploadOption.png");
+    background-position: 0px -376px;
+    background-size: 25px 1540px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 5px;
+}
