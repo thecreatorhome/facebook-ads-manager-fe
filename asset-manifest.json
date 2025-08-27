@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/facebook-ads-manager-fe/static/css/main.5d4d3cc5.css",
-    "main.js": "/facebook-ads-manager-fe/static/js/main.55aa4d65.js",
+    "main.css": "/facebook-ads-manager-fe/static/css/main.b499ab4e.css",
+    "main.js": "/facebook-ads-manager-fe/static/js/main.6fac6c6f.js",
     "static/js/453.77bd89b0.chunk.js": "/facebook-ads-manager-fe/static/js/453.77bd89b0.chunk.js",
     "static/media/all-icon.png": "/facebook-ads-manager-fe/static/media/all-icon.8b13c687aa69f299f11b.png",
     "static/media/formIcons.png": "/facebook-ads-manager-fe/static/media/formIcons.830bf8c62eeb1dc76a81.png",
@@ -12,6 +12,7 @@
     "static/media/startIconType.png": "/facebook-ads-manager-fe/static/media/startIconType.680488f05955b0d3ca5e.png",
     "static/media/doubtIconType.png": "/facebook-ads-manager-fe/static/media/doubtIconType.35513c75e5c645eb1d65.png",
     "static/media/createCampaignImages.png": "/facebook-ads-manager-fe/static/media/createCampaignImages.7a61ef27e56bc1f017ff.png",
+    "static/media/noImageUpload.png": "/facebook-ads-manager-fe/static/media/noImageUpload.7ec6e387cfbf71e55c75.png",
     "static/media/availableFilterIcon.png": "/facebook-ads-manager-fe/static/media/availableFilterIcon.f6f45cb3d8ea370782cb.png",
     "static/media/infoIconType.png": "/facebook-ads-manager-fe/static/media/infoIconType.b36ffba60235f760a678.png",
     "static/media/categoryIcon.png": "/facebook-ads-manager-fe/static/media/categoryIcon.6637a401542472f00f16.png",
@@ -23,12 +24,12 @@
     "static/media/availableAppsIcon.png": "/facebook-ads-manager-fe/static/media/availableAppsIcon.2e4246dd0e8364926997.png",
     "static/media/metaLogo.svg": "/facebook-ads-manager-fe/static/media/metaLogo.a149962eea39436a2c3da5f8513d81e0.svg",
     "index.html": "/facebook-ads-manager-fe/index.html",
-    "main.5d4d3cc5.css.map": "/facebook-ads-manager-fe/static/css/main.5d4d3cc5.css.map",
-    "main.55aa4d65.js.map": "/facebook-ads-manager-fe/static/js/main.55aa4d65.js.map",
+    "main.b499ab4e.css.map": "/facebook-ads-manager-fe/static/css/main.b499ab4e.css.map",
+    "main.6fac6c6f.js.map": "/facebook-ads-manager-fe/static/js/main.6fac6c6f.js.map",
     "453.77bd89b0.chunk.js.map": "/facebook-ads-manager-fe/static/js/453.77bd89b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d4d3cc5.css",
-    "static/js/main.55aa4d65.js"
+    "static/css/main.b499ab4e.css",
+    "static/js/main.6fac6c6f.js"
   ]
 }
