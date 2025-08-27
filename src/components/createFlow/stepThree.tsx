@@ -28,7 +28,7 @@ const StepThree = () => {
     const [headerImage, setAdHeaderImage] = useState("");
     return (
         <>
-            <div className="marginLeft15Percent">
+            <div className="marginLeft5Percent">
                 <div className="columnFlex heightWindowFixerFinal">
                     <div className="scroller">
                         <div className="campaignNameInbox width480">

@@ -17,7 +17,7 @@ const StepTwo = () => {
     };
     return (
         <>
-            <div className="marginLeft15Percent">
+            <div className="marginLeft10Percent">
                 <div className="columnFlex heightWindowFixer">
                     <div className="scroller">
                         <div className="campaignNameInbox">
